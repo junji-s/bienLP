@@ -1,0 +1,27 @@
+/* helperスタイル */
+/************************************************/
+// スタイル補助に用いる。!important推奨。keyvalueの形で省略化。
+
+// 余白クラス（for文で量産）
+$spaceClass: true !default;
+$spacePadding: false !default;
+$space_endValue: 15 !default;
+
+@if $spaceClass {
+	@for $i from 0 through $space_endValue {
+		.hp_mt#{$i * 10} {
+			margin-top: 10px * $i !important;
+		}
+		.hp_mb#{$i * 10} {
+			margin-bottom: 10px * $i !important;
+		}
+		@if $spacePadding {
+			.hp_pt#{$i * 10} {
+				padding-top: 10px * $i !important;
+			}
+			.hp_pb#{$i * 10} {
+				padding-bottom: 10px * $i !important;
+			}
+		}
+	}
+}

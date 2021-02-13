@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* base */
+/************************************************/
+body {
+	overflow-x: hidden;
+	color: $baseFont-color;
+	font-family: $fontFamily;
+	animation: fadein 1s forwards;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+img {
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}

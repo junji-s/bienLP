@@ -1,0 +1,74 @@
+// mixin
+// ・・・・・・・ レスポンシブwidth設定・・・・・・・
+// スマホ基準(〜以上)
+@mixin minmq($breakpoint: sp) {
+	@media screen and (min-width: #{map-get($mq-breakpoints, $breakpoint)}) {
+		@content;
+	}
+}
+// PC基準(〜未満)
+@mixin maxmq($breakpoint: sp) {
+	@media not all and (max-width: #{map-get($mq-breakpoints, $breakpoint)}) {
+		@content;
+	}
+}
+
+// ・・・・・・・ z-index・・・・・・・
+@mixin z-index($key) {
+	z-index: map-get($layer, $key);
+}
+
+// ・・・・・・・ ブラウザCSSハック・・・・・・・
+// IE11
+@mixin hack-IE11 {
+	@at-root {
+		_:-ms-lang(x)::-ms-backdrop , & {
+			@content;
+		}
+	}
+}
+
+// Edge(EdgeHTML)
+@mixin hack-Edge {
+	@at-root {
+		_:-ms-lang(x)::backdrop , & {
+			@content;
+		}
+	}
+}
+
+//  Edge(Chromium)
+@mixin hack-EdgeChromium {
+	@at-root {
+		_:lang(x)::-ms- , & {
+			@content;
+		}
+	}
+}
+
+// Chrome
+@mixin hack-Chrome {
+	@at-root {
+		_:lang(x)::-internal-media-controls-overlay-cast-button , & {
+			@content;
+		}
+	}
+}
+
+// Safari
+@mixin hack-Safari {
+	@at-root {
+		_:lang(x) + _:-webkit-full-screen-document , & {
+			@content;
+		}
+	}
+}
+
+// Firefox
+@mixin hack-Firefox {
+	@at-root {
+		_:lang(x)::-moz-placeholder , & {
+			@content;
+		}
+	}
+}

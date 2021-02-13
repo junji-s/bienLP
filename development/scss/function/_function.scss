@@ -1,0 +1,11 @@
+//・・・・・・・ フォントサイズ ・・・・・・・
+// setting.scss ： $baseFontsize: 16;
+@function rem($pixels) {
+	@return $pixels / $baseFontsize * 1rem;
+}
+
+// ・・・・・・・ pxをvwに変換・・・・・・・
+$viewport: 1440; // 基準となるビューポート
+@function vw($num, $width: $viewport) {
+	@return (1vw * $num / $width * 100);
+}

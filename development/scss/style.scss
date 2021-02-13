@@ -1,0 +1,57 @@
+//  サイト共通設定
+////////////////////////////////////////////////////////////////
+// setting：基本設定（変数などにまとめられるスタイル基本情報）
+@import "setting/color";
+@import "setting/fontfamily";
+@import "setting/size";
+@import "setting/z-index";
+
+// mixin：共通スタイル（別Block間で使いまわせるスタイルの部品化）
+@import "mixin/mixin";
+@import "function/function";
+
+//  以下、PRECSSに則ったファイル構成
+////////////////////////////////////////////////////////////////
+// base：ベース設定
+@import "base/base";
+
+// layout：サイトレイアウトのスタイル  （ly_）
+@import "layout/layout";
+
+// elementmodule：最小粒度  （el_）
+@import "module/elementmodule/elementmodule";
+
+// blockmodule：エレメント集合ブロック  （bl_）
+@import "module/blockmodule/blockmodule";
+
+// helper：補助スタイル  （hp_）
+@import "helper/helper";
+
+// unipue：ある1ページでしか使用されないスタイル  （un_）
+@import "unipue/top";
+@import "unipue/x";
+@import "unipue/x2";
+@import "unipue/x3";
+@import "unipue/x4";
+
+// program：js等のプログラムに対応するスタイル  
+// （jsで要素を取得させるクラス  js_）
+// （要素の状態を管理するクラス  is_）
+@import "program/program";
+
+// original：上記に当てはまらないスタイル
+@import "original/original"
+
+
+
+
+
+
+
+
+
+
+
+
+
+

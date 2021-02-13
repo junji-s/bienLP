@@ -1,0 +1,29 @@
+// フォファミリー設定
+
+// （下記は遊ゴシックを採用した場合） ////////////////////
+$fontFamily: -apple-system,
+BlinkMacSystemFont,
+Roboto,
+"Segoe UI",
+"Helvetica Neue",
+HelveticaNeue,
+YuGothic,
+"Yu Gothic Medium",
+"Yu Gothic",
+Verdana,
+Meiryo,
+sans-serif;
+
+//  太字：セクションタイトルなど（WinではSegoe UI semiboldを適用。Yu Gothic Medium→Yu Gothic） ////////////////////
+$ttl-fontFamily: -apple-system,
+BlinkMacSystemFont,
+Roboto,
+"Segoe UI semibold",
+"Helvetica Neue",
+HelveticaNeue,
+YuGothic,
+"Yu Gothic",
+"Segoe UI",
+Verdana,
+Meiryo,
+sans-serif;
