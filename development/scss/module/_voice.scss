@@ -1,22 +1,35 @@
 .el_voice_ttl {
-	font-size: rem(24);
 	@include maxmq(sp) {
-		font-size: rem(18);
 		margin-top: 114px;
 	}
-	margin-top: 160px;
-	text-align: center;
+	margin: 160px auto 0;
+	position: relative;
+	width: 136px;
+}
+
+.el_voice_ttl::after {
+	content: url(../../../public/assets/img/voice/ttlsub.png);
+	position: absolute;
+	right: -80px;
+	top: -50px;
+}
+
+@include maxmq(sp) {
+	.el_questionnaire_ttl::after {
+		content: url(../../../public/assets/img/voice/ttlsub_sp.png);
+		position: absolute;
+		right: -60px;
+		top: -50px;
+	}
 }
 
 .el_voice_subttl {
-	font-size: rem(40);
 	@include maxmq(sp) {
-		font-size: rem(30);
 		margin-top: 54px;
+		width: 280px;
 	}
-	line-height: 1.5em;
-	margin-top: 68px;
-	text-align: center;
+	margin: 68px auto 0;
+	width: 420px;
 }
 
 .bl_voice_container {
