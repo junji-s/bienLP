@@ -25,12 +25,11 @@
 }
 
 .el_how_subttl {
-	font-size: rem(40);
-	@include maxmq(sp) {
-		font-size: rem(30);
+	@include maxmq(tab) {
 		margin-top: 54px;
+		width: 280px;
 	}
-	line-height: 1.5em;
+	margin: 0 auto;
 	margin-top: 68px;
-	text-align: center;
+	width: 593px;
 }
