@@ -67,12 +67,11 @@ img {
 
 .ly_fvBg {
   align-items: center;
-  background-image: url(../../../public/assets/img/fv/fv.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
-  position: relative;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
 
@@ -83,18 +82,16 @@ img {
   height: 211px;
   z-index: 10;
   justify-content: center;
-  left: -50px;
+  left: 0;
   position: absolute;
-  top: -50px;
+  top: 0;
   width: 211px;
 }
 
 @media screen and (max-width: 600px) {
   .ly_logo {
     height: 116px;
-    left: -20px;
     position: absolute;
-    top: -20px;
     width: 116px;
   }
 }
@@ -339,6 +336,19 @@ img {
 .el_txt_clip {
   color: #fff;
   text-shadow: 1px 1px 0 #e6aa37, -1px -1px 0 #e6aa37, -1px 1px 0 #e6aa37, 1px -1px 0 #e6aa37, 1px 0 0 #e6aa37, -1px 0 0 #e6aa37, 0 1px 0 #e6aa37, 0 -1px 0 #e6aa37;
+}
+
+.video {
+  height: auto;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: auto;
+  z-index: -1;
 }
 
 .bl_fv_txt {
