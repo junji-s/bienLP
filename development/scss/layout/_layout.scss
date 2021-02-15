@@ -79,9 +79,10 @@
 	background: #fff;
 	display: none;
 	left: 0;
+	overflow-y: scroll;
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 100%;;
 }
 .ly_header.is_open {
 	@include z-index(header);
@@ -90,6 +91,9 @@
 .ly_header_inner {
 	align-items: center;
 	display: flex;
+	@include maxmq(sp) {
+		padding: 80px 0;
+	}
 	justify-content: center;
 	padding: 100px 0;
 }
@@ -120,8 +124,10 @@
 }
 .ly_header_cv_btn {
 	display: flex;
-	@include maxmq(sp) {
+	@include maxmq(tab) {
 		flex-direction: column;
+		padding-bottom: 200px;
+		width: 80%;
 	}
 }
 
@@ -172,4 +178,16 @@
 	margin: 0 auto;
 	max-width: 1700px;
 	padding: 0 30px;
+}
+
+@include minmq(sp) {
+	.el_close_btn {
+		display: none;
+	}
+}
+.el_close_btn {
+	font-size: rem(14);
+	margin-top: 70px;
+	padding: 10px 0;
+	text-align: center;
 }

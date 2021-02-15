@@ -29,6 +29,12 @@ $space_endValue: 15 !default;
 .hp_100vh {
 	min-height: calc(var(--vh, 1vh) * 100);
 }
+.hp_100vh_top {
+	@include maxmq(tab) {
+		height: auto;
+	}
+	min-height: calc(var(--vh, 1vh) * 100);
+}
 
 // 改行制御
 .hp_brPc {

@@ -124,6 +124,7 @@ img {
   background: #fff;
   display: none;
   left: 0;
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   width: 100%;
@@ -138,6 +139,12 @@ img {
   display: flex;
   justify-content: center;
   padding: 100px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .ly_header_inner {
+    padding: 80px 0;
+  }
 }
 
 .ly_header_inner::before {
@@ -170,9 +177,11 @@ img {
   display: flex;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
   .ly_header_cv_btn {
     flex-direction: column;
+    padding-bottom: 200px;
+    width: 80%;
   }
 }
 
@@ -225,6 +234,19 @@ img {
   margin: 0 auto;
   max-width: 1700px;
   padding: 0 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .el_close_btn {
+    display: none;
+  }
+}
+
+.el_close_btn {
+  font-size: 0.875rem;
+  margin-top: 70px;
+  padding: 10px 0;
+  text-align: center;
 }
 
 .ly_cv {
@@ -564,6 +586,12 @@ body.is_scrollRock {
   z-index: 30;
 }
 
+@media screen and (max-width: 600px) {
+  .bl_header_nav {
+    margin-bottom: 80px;
+  }
+}
+
 .bl_header_logo {
   margin: 0 auto 90px;
   width: 180px;
@@ -571,7 +599,7 @@ body.is_scrollRock {
 
 @media screen and (max-width: 600px) {
   .bl_header_logo {
-    margin: 0 auto 74px;
+    margin: 0 auto 70px;
   }
 }
 
@@ -2650,6 +2678,16 @@ body.is_scrollRock {
 
 .hp_100vh {
   min-height: calc(var(--vh, 1vh) * 100);
+}
+
+.hp_100vh_top {
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+@media screen and (max-width: 960px) {
+  .hp_100vh_top {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 600px) {

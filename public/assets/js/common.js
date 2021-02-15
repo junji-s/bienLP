@@ -46,7 +46,7 @@ $(function () {
   // ボタンクリックで各要素のクラスつけ外し
   var btn = $('.ly_hamburgerbtn ,.js_hamburgerbtn_line');
   var menu = $('.ly_header');
-  var link = $('.el_header_list > a');
+  var link = $('.el_header_list > a , .el_close_btn');
 
   $('.js_hamburgerbtn').on('click', function () {
     btn.toggleClass('is_click');
