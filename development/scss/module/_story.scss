@@ -8,14 +8,31 @@
 }
 
 .el_story_ttl {
-	font-size: rem(40);
-	@include maxmq(sp) {
-		font-size: rem(30);
-		line-height: calc(47 / 30);
-		text-align: center;
+	@include maxmq(tab) {
+		margin: 0 auto 90px;
+		width: 225px;
 	}
 	margin-bottom: 90px;
+	position: relative;
+	width: 430px;
 }
+
+.el_story_ttl::after {
+	content: url(../../../public/assets/img/story/ttlsub.png);
+	position: absolute;
+	right: -80px;
+	top: -50px;
+}
+
+@include maxmq(tab) {
+	.el_story_ttl::after {
+		content: url(../../../public/assets/img/story/ttl_spsub.png);
+		position: absolute;
+		right: 0;
+		top: -40px;
+	}
+}
+
 
 .bl_story_container {
 	@include maxmq(pc) {

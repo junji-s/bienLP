@@ -15,7 +15,7 @@
 }
 
 @include maxmq(sp) {
-	.el_questionnaire_ttl::after {
+	.el_voice_ttl::after {
 		content: url(../../../public/assets/img/voice/ttlsub_sp.png);
 		position: absolute;
 		right: -60px;

@@ -2243,7 +2243,7 @@ body.is_scrollRock {
 }
 
 @media screen and (max-width: 600px) {
-  .el_questionnaire_ttl::after {
+  .el_voice_ttl::after {
     content: url(../../../public/assets/img/voice/ttlsub_sp.png);
     position: absolute;
     right: -60px;
@@ -2283,15 +2283,31 @@ body.is_scrollRock {
 }
 
 .el_story_ttl {
-  font-size: 2.5rem;
   margin-bottom: 90px;
+  position: relative;
+  width: 430px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
   .el_story_ttl {
-    font-size: 1.875rem;
-    line-height: calc(47 / 30);
-    text-align: center;
+    margin: 0 auto 90px;
+    width: 225px;
+  }
+}
+
+.el_story_ttl::after {
+  content: url(../../../public/assets/img/story/ttlsub.png);
+  position: absolute;
+  right: -80px;
+  top: -50px;
+}
+
+@media screen and (max-width: 960px) {
+  .el_story_ttl::after {
+    content: url(../../../public/assets/img/story/ttl_spsub.png);
+    position: absolute;
+    right: 0;
+    top: -40px;
   }
 }
 
