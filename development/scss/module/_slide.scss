@@ -5,7 +5,7 @@
 @include maxmq(tab) {
 	.ly_slider {
 		display: block;
-		height: 500px;
+		height: 700px;
 		width: 100%;
 	}
 	.ly_carousel_container {
@@ -53,6 +53,18 @@
 
 	.ly_cmponent_block {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.ly_slider {
+		height: 600px;
+	}
+}
+
+@include maxmq(sp) {
+	.ly_slider {
+		height: 500px;
 	}
 }
 

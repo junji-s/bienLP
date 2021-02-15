@@ -31,7 +31,7 @@
 .bl_cmponent_list {
 	@include maxmq(tab) {
 		margin: 0 auto;
-		width: 60%;
+		width: 75%;
 	}
 	margin-left: auto;
 	width: 323px;
@@ -70,6 +70,7 @@
 .el_cmponent_discription {
 	font-size: rem(14);
 	@include maxmq(tab) {
+		font-size: rem(12);
 		margin-top: 20px;
 	}
 	line-height: calc(31 /14);
