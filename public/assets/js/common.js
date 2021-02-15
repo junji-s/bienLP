@@ -91,9 +91,22 @@ $(function () {
     $(this).toggleClass('is_open', 800);
     //クリックされていないac_parentのopenクラスを取る
     $(".ac_parent").not(this).removeClass("is_open");
-
     $(this).next().slideToggle();
     $('.ac_parent').not($(this)).next('.ac_child').slideUp();
   })
 
+
+  // ********************************
+  // スクロールフェードアニメーション
+  // ********************************
+  $(window).scroll(function () {
+    $(".scroll_block").each(function () {
+      var scroll = $(window).scrollTop();
+      var blockPosition = $(this).offset().top;
+      var windowHeihgt = $(window).height();
+      if (scroll > blockPosition - windowHeihgt + 300) {
+        $(this).addClass("is_blockIn");
+      }
+    });
+  });
 });

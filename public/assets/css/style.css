@@ -2447,6 +2447,20 @@ body.is_scrollRock {
   text-align: center;
 }
 
+.scroll_block {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  transition: all .5s ease-in;
+}
+
+/* 画面に入った時の動き */
+.scroll_block.is_blockIn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 /* helperスタイル */
 /************************************************/
 .hp_mt0 {
