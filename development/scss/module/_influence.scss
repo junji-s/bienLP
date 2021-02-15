@@ -69,11 +69,17 @@
 
 .bl_influence_wrapper {
 	background-image: url(../../../public/assets/img/Influence/influence_bg.jpg);
+	@include maxmq(tab) {
+		padding: 100px 50px 0;
+	}
+	@include maxmq(sp) {
+		padding: 50px 50px 0;
+	}
 	margin-top: 102px;
 	padding: 200px 250px 0;
 	@media screen and (max-width: 1600px) {
 		margin-top: 52px;
-		padding: 150px 50px 0;
+		padding: 50px 50px 0;
 	}
 }
 #influence .bl_influence_wrapper {
@@ -96,6 +102,9 @@
 	margin-top: 40px;
 }
 .bl_influence_container:not(:first-of-type) {
+	@include maxmq(sp) {
+		margin-top: 60px;
+	}
 	margin-top: 160px;
 }
 .bl_influence_container:nth-of-type(2) {
@@ -133,88 +142,72 @@
 }
 
 .el_influence_point_ttl {
+	@include maxmq(tab) {
+		margin: 0 auto 32px;
+		width: 500px;
+	}
 	@include maxmq(sp) {
-		margin-bottom: 32px;
+		margin: 0 auto 32px;
 		width: 304px;
 	}
 	margin-bottom: 43px;
 	width: 473px;
 }
-// 	font-size: rem(32);
-// 	@include maxmq(tab) {
-// 		font-size: rem(26);
-// 		text-align: center;
-// 	}
-// 	@include maxmq(sp) {
-// 		font-size: 6vw;
-// 		text-align: center;
-// 	}
-// 	line-height: calc(52 / 35);
-// 	position: relative;
-// }
 
-// .bl_influence_container .el_influence_point_ttl::before {
-// 	background-repeat: no-repeat;
-// 	background-size: contain;
-// 	content: "";
-// 	height: 152px;
-// 	left: -70px;
-// 	position: absolute;
-// 	top: -100px;
-// 	width: 230px;
-// 	@media screen and (max-width: 1600px) {
-// 		left: 0;
-// 		top: -100px;
-// 	}
-// }
-
-// @media screen and (max-width: 480px) {
-// 	.bl_influence_container .el_influence_point_ttl::before {
-// 		height: 70px;
-// 		top: -60px;
-// 		width: 140px;
-// 	}
-// }
-
-// .bl_influence_container:nth-of-type(1) .el_influence_point_ttl::before {
-// 	background-image: url(../../../public/assets/img/Influence/point01.png);
-// }
-// .bl_influence_container:nth-of-type(2) .el_influence_point_ttl::before {
-// 	background-image: url(../../../public/assets/img/Influence/point02.png);
-// }
-// .bl_influence_container:nth-of-type(3) .el_influence_point_ttl::before {
-// 	background-image: url(../../../public/assets/img/Influence/point03.png);
-// }
 
 .el_influence_point_txt {
 	font-weight: 300;
+	@include maxmq(tab) {
+		line-height: calc(30 / 14);
+		margin: 0;
+	}
 	@include maxmq(sp) {
 		font-size: rem(14);
-		line-height: calc(24 / 12);
-	}
-	@include maxmq(tab) {
-		line-height: calc(26 / 12);
-		margin-top: 32px;
 	}
 	line-height: calc(36 / 16);
 	margin-left: 70px;
 }
 
-.bl_influence_container:nth-of-type(1) .bl_influence_txt {
-	position: relative;
+
+@include minmq(tab) {
+	.bl_influence_container:nth-of-type(1) .bl_influence_txt {
+		position: relative;
+	}
+	.bl_influence_container:nth-of-type(1) .bl_influence_txt::after {
+		bottom: -150px;
+		content: url(../../../public/assets/img/Influence/arrow.png);
+		position: absolute;
+		right: 0;
+	}
+	.bl_influence_container:nth-of-type(2) .bl_influence_txt {
+		position: relative;
+	}
+	.bl_influence_container:nth-of-type(2) .bl_influence_txt::after {
+		bottom: -200px;
+		content: url(../../../public/assets/img/Influence/arrow2.png);
+		left: 0;
+		position: absolute;
+	}
 }
-.bl_influence_container:nth-of-type(1) .bl_influence_txt::after {
-	bottom: -150px;
-	content: url(../../../public/assets/img/Influence/arrow.png);
-	position: absolute;
-	right: 0;
-}
-.bl_influence_container:nth-of-type(2) .bl_influence_txt {
-	position: relative;
-}
-.bl_influence_container:nth-of-type(2) .bl_influence_txt::after {
-	bottom: -200px;
-	content: url(../../../public/assets/img/Influence/arrow2.png);
-	left: 0;
-	position: absolute;
+
+@include maxmq(tab) {
+	.bl_influence_container:nth-of-type(2) .bl_influence_txt {
+		position: relative;
+	}
+	.bl_influence_container:nth-of-type(2) .bl_influence_txt::before {
+		content: url(../../../public/assets/img/Influence/arrow_sp.png);
+		position: absolute;
+		right: 0;
+		top: -40px;
+	}
+
+	.bl_influence_container:nth-of-type(3) .bl_influence_txt {
+		position: relative;
+	}
+	.bl_influence_container:nth-of-type(3) .bl_influence_txt::before {
+		content: url(../../../public/assets/img/Influence/arrow_sp.png);
+		position: absolute;
+		right: 0;
+		top: -40px;
+	}
 }

@@ -1710,10 +1710,22 @@ body.is_scrollRock {
   padding: 200px 250px 0;
 }
 
+@media screen and (max-width: 960px) {
+  .bl_influence_wrapper {
+    padding: 100px 50px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bl_influence_wrapper {
+    padding: 50px 50px 0;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .bl_influence_wrapper {
     margin-top: 52px;
-    padding: 150px 50px 0;
+    padding: 50px 50px 0;
   }
 }
 
@@ -1745,6 +1757,12 @@ body.is_scrollRock {
 
 .bl_influence_container:not(:first-of-type) {
   margin-top: 160px;
+}
+
+@media screen and (max-width: 600px) {
+  .bl_influence_container:not(:first-of-type) {
+    margin-top: 60px;
+  }
 }
 
 .bl_influence_container:nth-of-type(2) {
@@ -1801,29 +1819,78 @@ body.is_scrollRock {
   width: 473px;
 }
 
+@media screen and (max-width: 960px) {
+  .el_influence_point_ttl {
+    margin: 0 auto 32px;
+    width: 500px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .el_influence_point_ttl {
-    margin-bottom: 32px;
+    margin: 0 auto 32px;
     width: 304px;
   }
 }
 
 .el_influence_point_txt {
   font-weight: 300;
-  line-height: calc(36 / 12);
+  line-height: calc(36 / 16);
+  margin-left: 70px;
+}
+
+@media screen and (max-width: 960px) {
+  .el_influence_point_txt {
+    line-height: calc(30 / 14);
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .el_influence_point_txt {
     font-size: 0.875rem;
-    line-height: calc(24 / 12);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .bl_influence_container:nth-of-type(1) .bl_influence_txt {
+    position: relative;
+  }
+  .bl_influence_container:nth-of-type(1) .bl_influence_txt::after {
+    bottom: -150px;
+    content: url(../../../public/assets/img/Influence/arrow.png);
+    position: absolute;
+    right: 0;
+  }
+  .bl_influence_container:nth-of-type(2) .bl_influence_txt {
+    position: relative;
+  }
+  .bl_influence_container:nth-of-type(2) .bl_influence_txt::after {
+    bottom: -200px;
+    content: url(../../../public/assets/img/Influence/arrow2.png);
+    left: 0;
+    position: absolute;
   }
 }
 
 @media screen and (max-width: 960px) {
-  .el_influence_point_txt {
-    line-height: calc(26 / 12);
-    margin-top: 32px;
+  .bl_influence_container:nth-of-type(2) .bl_influence_txt {
+    position: relative;
+  }
+  .bl_influence_container:nth-of-type(2) .bl_influence_txt::before {
+    content: url(../../../public/assets/img/Influence/arrow_sp.png);
+    position: absolute;
+    right: 0;
+    top: -40px;
+  }
+  .bl_influence_container:nth-of-type(3) .bl_influence_txt {
+    position: relative;
+  }
+  .bl_influence_container:nth-of-type(3) .bl_influence_txt::before {
+    content: url(../../../public/assets/img/Influence/arrow_sp.png);
+    position: absolute;
+    right: 0;
+    top: -40px;
   }
 }
 
