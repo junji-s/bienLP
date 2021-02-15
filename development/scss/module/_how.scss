@@ -1,11 +1,27 @@
 .el_how_ttl {
-	font-size: rem(24);
 	@include maxmq(sp) {
 		font-size: rem(18);
 		margin-top: 114px;
 	}
+	margin: 0 auto;
 	margin-top: 204px;
-	text-align: center;
+	position: relative;
+	width: 144px;
+}
+
+.el_how_ttl::after {
+	content: url(../../../public/assets/img/how_to_use/ttl_sub.png);
+	position: absolute;
+	right: -110px;
+	top: -70px;
+}
+@include maxmq(sp) {
+	.el_how_ttl::after {
+		content: url(../../../public/assets/img/how_to_use/ttl_spsub.png);
+		position: absolute;
+		right: -60px;
+		top: -50px;
+	}
 }
 
 .el_how_subttl {
