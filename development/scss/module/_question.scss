@@ -1,9 +1,16 @@
 .el_question_ttl {
-	font-size: rem(40);
-	@include maxmq(sp) {
-		font-size: rem(30);
+	@include maxmq(tab) {
+		width: 240px;
 	}
-	text-align: center;
+	margin: 150px auto 0;
+	position: relative;
+	width: 325px;
+}
+.el_question_ttl::after {
+	content: url(../../../public/assets/img/question/ttlsub.png);
+	position: absolute;
+	right: -50px;
+	top: -60px;
 }
 
 .ac_parent {
