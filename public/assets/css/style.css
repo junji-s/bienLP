@@ -306,7 +306,7 @@ img {
 }
 
 .ly_cv_about {
-  width: 50%;
+  width: 53%;
 }
 
 @media screen and (max-width: 960px) {
@@ -1079,7 +1079,7 @@ body.is_scrollRock {
 
 @media screen and (max-width: 600px) {
   .bl_cv_definition {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -1095,12 +1095,27 @@ body.is_scrollRock {
   align-items: flex-start;
   display: flex;
   flex-basis: 100px;
+  font-size: 0.875rem;
   line-height: 2em;
+}
+
+@media screen and (max-width: 600px) {
+  .el_cv_team {
+    flex-basis: 60px;
+    font-size: 0.625rem;
+  }
 }
 
 .el_cv_description {
   flex-basis: 75%;
+  font-size: 0.875rem;
   line-height: 2em;
+}
+
+@media screen and (max-width: 600px) {
+  .el_cv_description {
+    font-size: 0.625rem;
+  }
 }
 
 #distress {

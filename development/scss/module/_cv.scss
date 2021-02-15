@@ -194,7 +194,7 @@
 		width: 80%;
 	}
 	@include maxmq(sp) {
-		width: 90%;
+		width: 100%;
 	}
 }
 
@@ -210,10 +210,19 @@
 	align-items: flex-start;
 	display: flex;
 	flex-basis: 100px;
+	font-size: rem(14);
+	@include maxmq(sp) {
+		flex-basis: 60px;
+		font-size: rem(10);
+	}
 	line-height: 2em;
 }
 
 .el_cv_description {
 	flex-basis: 75%;
+	font-size: rem(14);
+	@include maxmq(sp) {
+		font-size: rem(10);
+	}
 	line-height: 2em;
 }
