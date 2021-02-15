@@ -2603,6 +2603,8 @@ body.is_scrollRock {
   border: 1px solid #e5dfdf;
   border-radius: 100px;
   display: block;
+  font-size: 1.125rem;
+  font-weight: bold;
   margin-bottom: 50px;
   padding: 40px 0;
   text-align: center;
@@ -2612,6 +2614,7 @@ body.is_scrollRock {
 
 @media screen and (max-width: 600px) {
   .el_footer_link {
+    font-size: 0.9375rem;
     width: 100%;
   }
 }
@@ -2643,6 +2646,8 @@ body.is_scrollRock {
 }
 
 .el_footer_linkTxt {
+  letter-spacing: .1em;
+  line-height: calc(38 /14);
   transition: all .4s;
 }
 

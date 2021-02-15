@@ -30,7 +30,10 @@
 	border: 1px solid #e5dfdf;
 	border-radius: 100px;
 	display: block;
+	font-size: rem(18);
+	font-weight: bold;
 	@include maxmq(sp) {
+		font-size: rem(15);
 		width: 100%;
 	}
 	margin-bottom: 50px;
@@ -67,6 +70,8 @@
 }
 
 .el_footer_linkTxt {
+	letter-spacing: .1em;
+	line-height: calc(38 /14);
 	transition: all .4s;
 }
 .el_footer_linkTxt:hover {
