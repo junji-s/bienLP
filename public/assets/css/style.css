@@ -101,7 +101,7 @@ img {
   background-color: #444;
   display: flex;
   height: 120px;
-  z-index: 100;
+  z-index: 1000;
   justify-content: center;
   pointer-events: none;
   position: fixed;
@@ -1378,13 +1378,14 @@ body.is_scrollRock {
 }
 
 .tab_menu_box {
+  position: absolute;
   top: 0;
   width: 100%;
 }
 
 .tab_ttl {
-  font-size: 1.625rem;
-  text-align: center;
+  margin: 0 auto;
+  width: 240px;
 }
 
 .tab_btn_img {
@@ -1592,7 +1593,9 @@ body.is_scrollRock {
 
 .tab_menu_how_container {
   display: flex;
+  height: 1000px;
   padding-top: 50px;
+  position: relative;
 }
 
 @media screen and (max-width: 600px) {
@@ -1740,13 +1743,13 @@ body.is_scrollRock {
   margin: 307px auto 0;
   position: relative;
   text-align: center;
-  width: 337px;
+  width: 256px;
 }
 
 @media screen and (max-width: 600px) {
   .el_influence_ttl {
     margin: 140px auto 0;
-    width: 280px;
+    width: 188px;
   }
 }
 

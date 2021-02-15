@@ -78,7 +78,7 @@ $(function () {
   // ********************************
   // タブメニュー 
   // ********************************
-  $(".menu-box:not(:first-of-type)").css("display", "none");
+  $(".js_tab_menu_box:not(:first-of-type)").css("display", "none");
 
   // タブの制御
   $('.js_tab_btn').on('click', function () {
@@ -88,6 +88,7 @@ $(function () {
     // コンテンツの制御
     $('.js_tab_menu_box').hide().eq(index).fadeIn();
   });
+
   $('.tab_btn_how').on('click', function () {
     var index = $('.tab_btn_how').index(this);
     $('.tab_btn_how').removeClass('is_tab_how_current');

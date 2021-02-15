@@ -159,13 +159,14 @@
 }
 
 .tab_menu_box {
+	position: absolute;
 	top: 0;
 	width: 100%;
 }
 
 .tab_ttl {
-	font-size: rem(26);
-	text-align: center;
+	margin: 0 auto;
+	width: 240px;
 }
 
 .tab_btn_img {
@@ -340,10 +341,12 @@
 // how to use
 .tab_menu_how_container {
 	display: flex;
+	height: 1000px;
 	@include maxmq(sp) {
 		padding-top: 35px;
 	}
 	padding-top: 50px;
+	position: relative;
 }
 .tab_btn_how_container {
 	display: flex;
