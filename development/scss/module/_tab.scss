@@ -37,8 +37,10 @@
 }
 
 .distress_wrap {
+	background-color: #fff;
 	position: relative;
 }
+
 .distress_wrap::before {
 	background-color: #f7f7f7;
 	content: "";

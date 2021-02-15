@@ -1228,6 +1228,7 @@ body.is_scrollRock {
 }
 
 .distress_wrap {
+  background-color: #fff;
   position: relative;
 }
 
