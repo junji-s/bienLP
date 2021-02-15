@@ -54,7 +54,11 @@
 
 
 .el_footer_icon {
+	transition: opacity .2s;
 	width: 48.8px;
+}
+.el_footer_icon:hover {
+	opacity: .7;
 }
 
 .el_copy {
