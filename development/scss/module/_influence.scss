@@ -196,5 +196,25 @@
 		line-height: calc(26 / 12);
 		margin-top: 32px;
 	}
-	line-height: calc(36 / 12);
+	line-height: calc(36 / 16);
+	margin-left: 70px;
+}
+
+.bl_influence_container:nth-of-type(1) .bl_influence_txt {
+	position: relative;
+}
+.bl_influence_container:nth-of-type(1) .bl_influence_txt::after {
+	bottom: -150px;
+	content: url(../../../public/assets/img/Influence/arrow.png);
+	position: absolute;
+	right: 0;
+}
+.bl_influence_container:nth-of-type(2) .bl_influence_txt {
+	position: relative;
+}
+.bl_influence_container:nth-of-type(2) .bl_influence_txt::after {
+	bottom: -200px;
+	content: url(../../../public/assets/img/Influence/arrow2.png);
+	left: 0;
+	position: absolute;
 }
