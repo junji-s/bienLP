@@ -3,11 +3,11 @@
 // メイン
 .ly_main {
 	@include maxmq(sp) {
-		padding: 0 20px;
+		padding: 150px 20px 0;
 	}
 	margin: 0 auto;
 	max-width: 1160px;
-	padding: 0 30px;
+	padding: 150px 30px 30px 0;
 }
 
 // FV
@@ -39,9 +39,7 @@
 	@include z-index(logo);
 	@include maxmq(sp) {
 		height: 116px;
-		// left: -20px;
 		position: absolute;
-		// top: -20px;
 		width: 116px;
 	}
 	justify-content: center;
@@ -137,6 +135,30 @@
 		padding: 80px 0;
 	}
 	padding: 140px 0;
+	position: relative;
+}
+
+// 背景
+.ly_top::after {
+	content: url(../../../public/assets/img/bg/bg1.png);
+	@include z-index(bg);
+	position: absolute;
+	right: -500px;
+	top: 100px;
+}
+.ly_top::before {
+	content: url(../../../public/assets/img/bg/bg2.png);
+	@include z-index(bg);
+	left: -500px;
+	position: absolute;
+	top: 1000px;
+}
+
+@include maxmq(tab) {
+	.ly_top::after {
+		right: -600px;
+		top: 500px;
+	}
 }
 
 .ly_top_wrap {
@@ -154,6 +176,27 @@
 .ly_cmponent_wrapper {
 	display: flex;
 	flex-wrap: wrap;
+}
+// 背景
+.ly_cmponent_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.ly_cmponent_wrapper::before {
+	content: url(../../../public/assets/img/bg/bg3.png);
+	@include z-index(bg);
+	left: -500px;
+	position: absolute;
+	top: -1200px;
+}
+.ly_cmponent_wrapper::after {
+	content: url(../../../public/assets/img/bg/bg4.png);
+	@include z-index(bg);
+	position: absolute;
+	right: -700px;
+	top: -500px;
 }
 
 .ly_cmponent_block {

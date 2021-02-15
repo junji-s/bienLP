@@ -1,3 +1,22 @@
+#questionnaire {
+	position: relative;
+}
+// 背景
+#questionnaire::before {
+	content: url(../../../public/assets/img/bg/bg5.png);
+	@include z-index(bg);
+	left: -800px;
+	position: absolute;
+	top: -200px;
+}
+#questionnaire::after {
+	content: url(../../../public/assets/img/bg/bg6.png);
+	@include z-index(bg);
+	position: absolute;
+	right: -700px;
+	top: 1500px;
+}
+
 .el_questionnaire_ttl {
 	@include maxmq(sp) {
 		margin-top: 114px;

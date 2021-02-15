@@ -97,3 +97,17 @@
 	}
 	margin-right: 32px;
 }
+
+
+// 背景
+#question {
+	position: relative;
+}
+
+#question::after {
+	content: url(../../../public/assets/img/bg/bg8.png);
+	@include z-index(bg);
+	left: -700px;
+	position: absolute;
+	top: 800px;
+}

@@ -36,18 +36,14 @@
 }
 
 .el_top_ttl {
-	// font-size: rem(44);
-	// font-weight: 900;
 	@include maxmq(tab) {
 		text-align: center;
+		width: 500px;
 	}
 	@include maxmq(sp) {
 		margin-top: 30px;
-		width: 280px;
-		// font-size: 7vw;
+		width: 300px;
 	}
-	// letter-spacing: .1em;
-	// line-height: calc(65 / 44);
 	position: relative;
 }
 
@@ -114,4 +110,10 @@
 	}
 	margin-right: 23.5px;
 	width: .75em;
+}
+
+.el_top_about {
+	@include maxmq(tab) {
+		width: 350px;
+	}
 }
