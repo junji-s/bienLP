@@ -86,15 +86,17 @@ $(function () {
     $('.js_tab_btn').removeClass('is_tab_current');
     $(this).addClass('is_tab_current');
     // コンテンツの制御
-    $('.js_tab_menu_box').hide().eq(index).fadeIn();
+    $('.tab_menuhow_box').hide().eq(index).fadeIn();
   });
 
+
+  $(".tab_menuhow_box:not(:first-of-type)").css("display", "none");
   $('.tab_btn_how').on('click', function () {
     var index = $('.tab_btn_how').index(this);
     $('.tab_btn_how').removeClass('is_tab_how_current');
     $(this).addClass('is_tab_how_current');
     // コンテンツの制御
-    $('.js_tab_menu_box').hide().eq(index).fadeIn();
+    $('.tab_menuhow_box').hide().eq(index).fadeIn();
   });
 
 
