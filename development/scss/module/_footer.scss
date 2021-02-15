@@ -65,3 +65,11 @@
 	display: block;
 	text-align: center;
 }
+
+.el_footer_linkTxt {
+	transition: all .4s;
+}
+.el_footer_linkTxt:hover {
+	opacity: .7;
+	text-decoration: underline;
+}

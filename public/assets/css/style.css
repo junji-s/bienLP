@@ -2460,6 +2460,15 @@ body.is_scrollRock {
   text-align: center;
 }
 
+.el_footer_linkTxt {
+  transition: all .4s;
+}
+
+.el_footer_linkTxt:hover {
+  opacity: .7;
+  text-decoration: underline;
+}
+
 .scroll_block {
   opacity: 0;
   -webkit-transform: translateY(100px);
