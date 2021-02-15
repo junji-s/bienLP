@@ -79,13 +79,15 @@
 	background: #fff;
 	display: none;
 	left: 0;
-	overflow-y: scroll;
 	position: fixed;
 	top: 0;
-	width: 100%;;
+	width: 100%;
 }
 .ly_header.is_open {
+	height: 200vh;
 	@include z-index(header);
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 .ly_header_inner {
@@ -95,6 +97,7 @@
 		padding: 80px 0;
 	}
 	justify-content: center;
+	overflow-y: scroll;
 	padding: 100px 0;
 }
 .ly_header_inner::before {

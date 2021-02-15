@@ -65,6 +65,7 @@ $(function () {
     menu.hide();
     btn.toggleClass('is_click');
     menu.toggleClass('is_open');
+
     if (btn.hasClass('is_click')) {
       sclollRock()
       $('body').css('padding-right', '15px');
