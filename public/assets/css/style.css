@@ -1384,8 +1384,8 @@ body.is_scrollRock {
 }
 
 .tab_ttl {
-  font-size: 1.625rem;
-  text-align: center;
+  margin: 0 auto;
+  width: 240px;
 }
 
 .tab_btn_img {
