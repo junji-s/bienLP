@@ -66,10 +66,8 @@
 		width: 235px;
 	}
 	margin: 0 auto;
-	// line-height: 2em;
 	margin-top: 164px;
 	width: 572px;
-	// text-align: center;
 }
 .tab_btn_container {
 	display: flex;
@@ -148,6 +146,7 @@
 }
 .tab_menu_container {
 	display: flex;
+	height: 1000px;
 	@include maxmq(pc) {
 		padding: 80px 50px;
 	}
@@ -156,9 +155,11 @@
 	}
 	justify-content: space-between;
 	padding: 80px 100px;
+	position: relative;
 }
 
 .tab_menu_box {
+	top: 0;
 	width: 100%;
 }
 
@@ -201,7 +202,8 @@
 	}
 	margin-top: 60px;
 	padding: 44px 0;
-	position: relative;
+	position: absolute;
+	width: calc(100% - 200px);
 	z-index: 2;
 }
 

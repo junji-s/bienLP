@@ -1359,8 +1359,10 @@ body.is_scrollRock {
 
 .tab_menu_container {
   display: flex;
+  height: 1000px;
   justify-content: space-between;
   padding: 80px 100px;
+  position: relative;
 }
 
 @media screen and (max-width: 1100px) {
@@ -1376,6 +1378,7 @@ body.is_scrollRock {
 }
 
 .tab_menu_box {
+  top: 0;
   width: 100%;
 }
 
@@ -1421,7 +1424,8 @@ body.is_scrollRock {
 .tab_menu_reason {
   margin-top: 60px;
   padding: 44px 0;
-  position: relative;
+  position: absolute;
+  width: calc(100% - 200px);
   z-index: 2;
 }
 
