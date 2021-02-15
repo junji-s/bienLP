@@ -187,29 +187,12 @@ img {
 
 .ly_top {
   padding: 140px 0;
-  position: relative;
 }
 
 @media screen and (max-width: 960px) {
   .ly_top {
     padding: 80px 0;
   }
-}
-
-.ly_top::after {
-  content: url(../../../public/assets/img/bg/bg1.png);
-  z-index: -1;
-  position: absolute;
-  right: -500px;
-  top: 100px;
-}
-
-.ly_top::before {
-  content: url(../../../public/assets/img/bg/bg2.png);
-  z-index: -1;
-  left: -500px;
-  position: absolute;
-  top: 1000px;
 }
 
 @media screen and (max-width: 960px) {
@@ -236,28 +219,6 @@ img {
 .ly_cmponent_wrapper {
   display: flex;
   flex-wrap: wrap;
-}
-
-.ly_cmponent_wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.ly_cmponent_wrapper::before {
-  content: url(../../../public/assets/img/bg/bg3.png);
-  z-index: -1;
-  left: -500px;
-  position: absolute;
-  top: -1200px;
-}
-
-.ly_cmponent_wrapper::after {
-  content: url(../../../public/assets/img/bg/bg4.png);
-  z-index: -1;
-  position: absolute;
-  right: -700px;
-  top: -500px;
 }
 
 .ly_cmponent_block {
@@ -2246,26 +2207,6 @@ body.is_scrollRock {
   }
 }
 
-#questionnaire {
-  position: relative;
-}
-
-#questionnaire::before {
-  content: url(../../../public/assets/img/bg/bg5.png);
-  z-index: -1;
-  left: -800px;
-  position: absolute;
-  top: -200px;
-}
-
-#questionnaire::after {
-  content: url(../../../public/assets/img/bg/bg6.png);
-  z-index: -1;
-  position: absolute;
-  right: -700px;
-  top: 1500px;
-}
-
 .el_questionnaire_ttl {
   margin: 160px auto 0;
   position: relative;
@@ -2365,19 +2306,6 @@ body.is_scrollRock {
   .bl_voice_container {
     margin: 34px 0 64px;
   }
-}
-
-#voice {
-  position: relative;
-}
-
-#voice::before {
-  content: url(../../../public/assets/img/bg/bg7.png);
-  z-index: -1;
-  left: -700px;
-  position: absolute;
-  top: 1700px;
-  z-index: 100;
 }
 
 .bl_story {
@@ -2600,21 +2528,12 @@ body.is_scrollRock {
 
 #question {
   margin-bottom: 140px;
-  position: relative;
 }
 
 @media screen and (max-width: 600px) {
   #question {
     margin-bottom: 65px;
   }
-}
-
-#question::after {
-  content: url(../../../public/assets/img/bg/bg8.png);
-  z-index: -1;
-  left: -700px;
-  position: absolute;
-  top: 800px;
 }
 
 .recommendation {

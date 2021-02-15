@@ -39,15 +39,15 @@
 	margin: 60px 0 135px;
 }
 
-#voice {
-	position: relative;
-}
+// #voice {
+// 	position: relative;
+// }
 
-#voice::before {
-	content: url(../../../public/assets/img/bg/bg7.png);
-	@include z-index(bg);
-	left: -700px;
-	position: absolute;
-	top: 1700px;
-	z-index: 100;
-}
+// #voice::before {
+// 	content: url(../../../public/assets/img/bg/bg7.png);
+// 	@include z-index(bg);
+// 	left: -700px;
+// 	position: absolute;
+// 	top: 1700px;
+// 	z-index: 100;
+// }
