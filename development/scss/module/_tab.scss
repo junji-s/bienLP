@@ -202,6 +202,7 @@
 	margin-top: 60px;
 	padding: 44px 0;
 	position: relative;
+	z-index: 2;
 }
 
 .tab_subttl {
@@ -257,7 +258,6 @@
 }
 
 .tab_menu_logoTxt_bg {
-	background-color: #fff7ea;
 	@include maxmq(pc) {
 		margin: 0 -100px -125px -100px;
 	}
@@ -265,6 +265,16 @@
 		margin: 0 -50px -125px -50px;
 	}
 	margin: 0 -150px -125px -150px;
+	position: relative;
+}
+
+.tab_menu_logoTxt_bg::before {
+	background-color: #fff7ea;
+	content: "";
+	height: 250px;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
 }
 
 .tab_menu_logoTxt {

@@ -39,11 +39,19 @@
 
 .el_cmponent_team {
 	font-size: rem(22);
-	position: relative;
+	margin-left: 20px;
+	position: relative;;
+}
+
+.ly_cmponent_block {
+	@include maxmq(sp) {
+		margin-top: 0;
+	}
+	margin-top: 50px;
 }
 
 .ly_cmponent_block .el_cmponent_team::before {
-	left: -75px;
+	left: -80px;
 	position: absolute;
 	top: -5px;
 }
@@ -74,7 +82,7 @@
 		margin-top: 20px;
 	}
 	line-height: calc(31 /14);
-	margin-top: 48px;
+	margin: 48px 0 0 30px;
 }
 
 .el_cmponent_img {

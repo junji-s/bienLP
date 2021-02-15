@@ -765,7 +765,7 @@ body.is_scrollRock {
 
 @media screen and (max-width: 960px) {
   .el_top_ttl {
-    text-align: center;
+    margin: 0 auto;
     width: 500px;
   }
 }
@@ -869,6 +869,7 @@ body.is_scrollRock {
 
 @media screen and (max-width: 960px) {
   .el_top_about {
+    margin: 0 auto 50px;
     width: 350px;
   }
 }
@@ -1421,6 +1422,7 @@ body.is_scrollRock {
   margin-top: 60px;
   padding: 44px 0;
   position: relative;
+  z-index: 2;
 }
 
 @media screen and (max-width: 960px) {
@@ -1494,8 +1496,8 @@ body.is_scrollRock {
 }
 
 .tab_menu_logoTxt_bg {
-  background-color: #fff7ea;
   margin: 0 -150px -125px -150px;
+  position: relative;
 }
 
 @media screen and (max-width: 1100px) {
@@ -1508,6 +1510,15 @@ body.is_scrollRock {
   .tab_menu_logoTxt_bg {
     margin: 0 -50px -125px -50px;
   }
+}
+
+.tab_menu_logoTxt_bg::before {
+  background-color: #fff7ea;
+  content: "";
+  height: 250px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
 }
 
 .tab_menu_logoTxt {
@@ -2037,11 +2048,22 @@ body.is_scrollRock {
 
 .el_cmponent_team {
   font-size: 1.375rem;
+  margin-left: 20px;
   position: relative;
 }
 
+.ly_cmponent_block {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .ly_cmponent_block {
+    margin-top: 0;
+  }
+}
+
 .ly_cmponent_block .el_cmponent_team::before {
-  left: -75px;
+  left: -80px;
   position: absolute;
   top: -5px;
 }
@@ -2073,7 +2095,7 @@ body.is_scrollRock {
 .el_cmponent_discription {
   font-size: 0.875rem;
   line-height: calc(31 /14);
-  margin-top: 48px;
+  margin: 48px 0 0 30px;
 }
 
 @media screen and (max-width: 960px) {

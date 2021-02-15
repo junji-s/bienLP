@@ -37,7 +37,7 @@
 
 .el_top_ttl {
 	@include maxmq(tab) {
-		text-align: center;
+		margin: 0 auto;
 		width: 500px;
 	}
 	@include maxmq(sp) {
@@ -114,6 +114,7 @@
 
 .el_top_about {
 	@include maxmq(tab) {
+		margin: 0 auto 50px;
 		width: 350px;
 	}
 }
