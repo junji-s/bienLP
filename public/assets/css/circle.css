@@ -1,0 +1,161 @@
+.circleList {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.circleList li + li {
+  margin-left: 30px;
+}
+
+.circleDiv {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+.circleSvg {
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  transform: rotate(-90deg);
+}
+
+
+
+.circleSvg .circle {
+  fill: none;
+  stroke: #DEAB4F;
+  stroke-width: 50px;
+  stroke-dasharray: 1000;
+  animation: circleAnimation linear 3s;
+}
+.circleSvg .circle_75 {
+  stroke-dasharray: 710;
+  animation: circleAnimation2 linear 3s;
+}
+.circleSvg .circle_92 {
+  stroke-dasharray: 860;
+  animation: circleAnimation3 linear 3s;
+}
+.circleSvg .circle_gray {
+  stroke: #F7F7F7;
+  animation: circleAnimation linear 4.2s;
+}
+.circleSvg .circle_gray_2 {
+  stroke: #F7F7F7;
+  animation: circleAnimation linear 3.5s;
+}
+
+
+
+@keyframes circleAnimation {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 1000;
+  }
+}
+@keyframes circleAnimation2 {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 710;
+  }
+}
+@keyframes circleAnimation3 {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 860;
+  }
+}
+
+
+
+
+.circleDiv__img {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+}
+.circleDiv__img img {
+  width: 230px;
+}
+.circleDiv__number {
+  position: absolute;
+  top: 110px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-size: 85px;
+  color: #E6AA37;
+}
+.circleDiv__number span {
+  font-size: 31px;
+  color: #000;
+}
+
+
+.circleNotice {
+  text-align: right;
+  font-size: 14px;
+  color: #444;
+  margin-top: 60px;
+}
+
+
+body {
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+.circleSp {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .circlePc {
+    display: none;
+  }
+  .circleSp {
+    display: block;
+  }
+}
+
+.circleSp {
+  max-width: 500px;
+  margin: auto;
+}
+#circleSlider {
+  padding-bottom: 50px;
+}
+.circleSp .swiper-pagination {
+  bottom: 15px;
+}
+.circleSp .swiper-slide {
+  text-align: center;
+}
+.swiper-pagination-bullet {
+  background: #AAA;
+  width: 8px;
+  height: 8px;
+}
+.swiper-pagination-bullet-active {
+  background: #E6AA37;
+}
+.swiper-button-next, .swiper-button-prev {
+  top: auto;
+  bottom: 10px;
+  color: #E6AA37;
+}

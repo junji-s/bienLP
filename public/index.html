@@ -31,6 +31,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
 
     <!-- 外部ファイル読み込み -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/destyle.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/circle.css">
@@ -679,11 +680,85 @@
             </picture>
           </h3>
           <div class="questionnaire_container">
-            <picture>
-              <source media="(min-width: 600px)" srcset="./assets/img/questionnaire/questionnaire.png">
-              <source media="(max-width: 599px)" srcset="./assets/img/questionnaire/questionnaire_sp01.png">
-              <img src="./assets/img/questionnaire/questionnaire.png" alt="">
-            </picture>
+            <!-- 円の実装 -->
+            <div class="circlePc">
+              <ul class="circleList">
+                <li>
+                  <div class="circleDiv">
+                    <svg class="circleSvg">
+                      <circle class="circle" cx="175" cy="175" r="150"/>
+                    </svg>
+                    <div class="circleDiv__img"><img src="./assets/img/circle/txt1.png" alt="使い心地について"></div>
+                    <span class="circleDiv__number">100<span>%</span></span>
+                  </div>
+                </li>
+                <li>
+                  <div class="circleDiv">
+                    <svg class="circleSvg">
+                      <circle class="circle circle_gray" cx="175" cy="175" r="150"/>
+                      <circle class="circle circle_75" cx="175" cy="175" r="150"/>
+                    </svg>
+                    <div class="circleDiv__img"><img src="./assets/img/circle/txt1.png" alt="香りについて"></div>
+                    <span class="circleDiv__number">75<span>%</span></span>
+                  </div>
+                </li>
+              </ul>
+              <ul class="circleList">
+                <li>
+                  <div class="circleDiv">
+                    <svg class="circleSvg">
+                      <circle class="circle circle_gray_2" cx="175" cy="175" r="150"/>
+                      <circle class="circle circle_92" cx="175" cy="175" r="150"/>
+                    </svg>
+                    <div class="circleDiv__img"><img src="./assets/img/circle/txt3.png" alt="鼻水の改善"></div>
+                    <span class="circleDiv__number">92<span>%</span></span>
+                  </div>
+                </li>
+                <li>
+                  <div class="circleDiv">
+                    <svg class="circleSvg">
+                      <circle class="circle circle_gray_2" cx="175" cy="175" r="150"/>
+                      <circle class="circle circle_92" cx="175" cy="175" r="150"/>
+                    </svg>
+                    <div class="circleDiv__img"><img src="./assets/img/circle/txt4.png" alt="くしゃみの改善"></div>
+                    <span class="circleDiv__number">92<span>%</span></span>
+                  </div>
+                </li>
+                <li>
+                  <div class="circleDiv">
+                    <svg class="circleSvg">
+                      <circle class="circle" cx="175" cy="175" r="150"/>
+                    </svg>
+                    <div class="circleDiv__img"><img src="./assets/img/circle/txt5.png" alt="鼻づまりの改善"></div>
+                    <span class="circleDiv__number">100<span>%</span></span>
+                  </div>
+                </li>
+              </ul>
+              <p class="circleNotice">※当社実施アンケートで普通以上と答えた方(N=28)</p>
+            </div>
+            <div class="circleSp">
+              <!-- Slider main container -->
+              <div id="circleSlider" class="swiper-container">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="./assets/img/circle/circle1.png" alt="使い心地について"></div>
+                  <div class="swiper-slide"><img src="./assets/img/circle/circle2.png" alt="香りについて"></div>
+                  <div class="swiper-slide"><img src="./assets/img/circle/circle3.png" alt="鼻水の改善"></div>
+                  <div class="swiper-slide"><img src="./assets/img/circle/circle4.png" alt="くしゃみの改善"></div>
+                  <div class="swiper-slide"><img src="./assets/img/circle/circle5.png" alt="鼻づまりの改善"></div>
+                  <!-- Slides -->
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+              <!-- Slider main container -->
+
+            </div>
+            <!-- 円の実装 -->
           </div>
         </section>
         <!-- /#questionnaire -->
@@ -943,6 +1018,27 @@
         setFillHeight();
       });
       setFillHeight();
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('#circleSlider', {
+        loop: true,
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
     </script>
   </body>
 
