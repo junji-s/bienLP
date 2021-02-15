@@ -159,7 +159,8 @@
 }
 
 .tab_menu_box {
-	top: 0;
+	position: absolute;
+	top: 100px;
 	width: 100%;
 }
 
@@ -340,10 +341,12 @@
 // how to use
 .tab_menu_how_container {
 	display: flex;
+	height: 1000px;
 	@include maxmq(sp) {
 		padding-top: 35px;
 	}
 	padding-top: 50px;
+	position: relative;
 }
 .tab_btn_how_container {
 	display: flex;
