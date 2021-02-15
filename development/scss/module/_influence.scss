@@ -18,9 +18,18 @@
 		width: 280px;
 	}
 	margin: 307px auto 0;
+	position: relative;
 	text-align: center;
 	width: 337px;
 }
+
+.el_influence_ttl::before {
+	content: url(../../../public/assets/img/Influence/ttl_sub.png);
+	left: -30px;
+	position: absolute;
+	top: -40px;
+}
+
 .bl_influence_block {
 	@include maxmq(tab) {
 		margin: 60px auto 0;

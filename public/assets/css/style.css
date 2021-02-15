@@ -1656,6 +1656,7 @@ body.is_scrollRock {
 
 .el_influence_ttl {
   margin: 307px auto 0;
+  position: relative;
   text-align: center;
   width: 337px;
 }
@@ -1665,6 +1666,13 @@ body.is_scrollRock {
     margin: 140px auto 0;
     width: 280px;
   }
+}
+
+.el_influence_ttl::before {
+  content: url(../../../public/assets/img/Influence/ttl_sub.png);
+  left: -30px;
+  position: absolute;
+  top: -40px;
 }
 
 .bl_influence_block {
