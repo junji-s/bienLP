@@ -78,7 +78,7 @@ $(function () {
   // ********************************
   // タブメニュー 
   // ********************************
-  // $(".menu-box:not(:first-of-type)").css("display", "none");
+  $(".js_tab_menu_box:not(:first-of-type)").css("display", "none");
 
   // タブの制御
   $('.js_tab_btn').on('click', function () {
