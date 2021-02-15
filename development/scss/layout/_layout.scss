@@ -91,6 +91,7 @@
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	padding: 100px 0;
 }
 .ly_header_inner::before {
 	background-image: url(../../../public/assets/img/bg/bg1-1.png);
@@ -110,6 +111,18 @@
 	position: absolute;
 	right: -500px;
 	width: 980px;
+}
+
+// モーダル内
+.ly_modal_flex {
+	display: flex;
+	flex-direction: column;
+}
+.ly_header_cv_btn {
+	display: flex;
+	@include maxmq(sp) {
+		flex-direction: column;
+	}
 }
 
 // TOP

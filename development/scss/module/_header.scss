@@ -60,6 +60,7 @@ body.is_scrollRock {
 }
 
 .bl_header_nav {
+	margin-bottom: 100px;
 	width: 571px;
 	z-index: 30;
 }
@@ -68,7 +69,7 @@ body.is_scrollRock {
 	@include maxmq(sp) {
 		margin: 0 auto 74px;
 	}
-	margin: 0 auto 134px;
+	margin: 0 auto 90px;
 	width: 180px;
 }
 
