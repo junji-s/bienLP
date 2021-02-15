@@ -33,10 +33,21 @@
 }
 
 .bl_voice_container {
+	display: flex;
+	flex-wrap: wrap;
 	@include maxmq(sp) {
 		margin: 34px 0 64px;
 	}
+	justify-content: space-between;
 	margin: 60px 0 135px;
+}
+
+.el_voice_item {
+	flex-basis: 48%;
+}
+
+.el_voice_item:nth-of-type(3) , .el_voice_item:nth-of-type(4) {
+	margin-top: 40px;
 }
 
 // #voice {
