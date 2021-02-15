@@ -57,14 +57,17 @@
 }
 
 .tab_distress_ttl {
-	font-size: rem(40);
+	// font-size: rem(40);
 	@include maxmq(sp) {
-		font-size: rem(30);
 		margin-top: 110px;
+		// font-size: rem(30);
+		width: 235px;
 	}
-	line-height: 2em;
+	margin: 0 auto;
+	// line-height: 2em;
 	margin-top: 164px;
-	text-align: center;
+	width: 572px;
+	// text-align: center;
 }
 .tab_btn_container {
 	display: flex;

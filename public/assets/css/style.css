@@ -1122,16 +1122,15 @@ body.is_scrollRock {
 }
 
 .tab_distress_ttl {
-  font-size: 2.5rem;
-  line-height: 2em;
+  margin: 0 auto;
   margin-top: 164px;
-  text-align: center;
+  width: 572px;
 }
 
 @media screen and (max-width: 600px) {
   .tab_distress_ttl {
-    font-size: 1.875rem;
     margin-top: 110px;
+    width: 235px;
   }
 }
 
