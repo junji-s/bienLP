@@ -86,7 +86,7 @@ $(function () {
     $('.js_tab_btn').removeClass('is_tab_current');
     $(this).addClass('is_tab_current');
     // コンテンツの制御
-    $('.tab_menuhow_box').hide().eq(index).fadeIn();
+    $('.js_tab_menu_box').hide().eq(index).fadeIn();
   });
 
 
