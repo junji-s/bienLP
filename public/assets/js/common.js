@@ -104,7 +104,7 @@ $(function () {
       var scroll = $(window).scrollTop();
       var blockPosition = $(this).offset().top;
       var windowHeihgt = $(window).height();
-      if (scroll > blockPosition - windowHeihgt + 300) {
+      if (scroll > blockPosition - windowHeihgt) {
         $(this).addClass("is_blockIn");
       }
     });
