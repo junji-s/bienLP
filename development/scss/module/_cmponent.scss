@@ -1,20 +1,20 @@
 .el_cmponent_ttl {
-	font-size: rem(24);
 	@include maxmq(sp) {
-		margin-top: 120px;
-		text-align: center;
+		margin: 120px auto 0;
+		width: 174px;
 	}
 	margin-top: 212px;
+	width: 255px;
 }
 
 .el_cmponent_subttl {
-	font-size: rem(35);
 	@include maxmq(sp) {
-		font-size: rem(30);
-		text-align: center;
+		margin: 32px auto 0;
+		width: 288px;
 	}
 	line-height: 1.5em;
 	margin-top: 44px;
+	width: 383px;
 }
 
 .el_cmponent_txt {

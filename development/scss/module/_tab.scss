@@ -345,6 +345,8 @@
 	background-color: #fff;
 	border: 1px solid #e5dfdf;
 	border-radius: 40px;
+	font-size: rem(20);
+	font-weight: bold;
 	@include maxmq(sp) {
 		width: 130px;
 	}
