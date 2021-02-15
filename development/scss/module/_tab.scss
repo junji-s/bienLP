@@ -456,3 +456,27 @@
 // 	border: 1px solid #e6aa37;
 // 	color: $fontcolor_accent;
 // }
+
+.tab_menuhow_inner {
+	width: 100%;
+}
+.tab_menuhow_flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tab_menuhow_flexItem {
+	flex-basis: 30%;
+	position: relative;
+}
+.tab_menuhow_flexItem:not(:first-of-type)::before {
+	content: url(../../../public/assets/img/how_to_use/arrow.png);
+	left: -50px;
+	position: absolute;
+	top: 150px;
+}
+
+.tab_menuhow_block {
+	margin: 60px auto 0;
+	width: 763px;
+}
