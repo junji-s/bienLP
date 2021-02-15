@@ -1650,6 +1650,10 @@ body.is_scrollRock {
   }
 }
 
+.influence_gradient {
+  text-align: center;
+}
+
 .bl_influence_wrapper {
   background-image: url(../../../public/assets/img/Influence/influence_bg.jpg);
   margin-top: 102px;
