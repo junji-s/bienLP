@@ -2528,16 +2528,6 @@ body.is_scrollRock {
   }
 }
 
-.ac_parent:last-of-type {
-  margin-bottom: 138px;
-}
-
-@media screen and (max-width: 600px) {
-  .ac_parent:last-of-type {
-    margin-bottom: 65px;
-  }
-}
-
 .ac_parent:before {
   background: #444;
   content: "";
@@ -2609,7 +2599,14 @@ body.is_scrollRock {
 }
 
 #question {
+  margin-bottom: 140px;
   position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  #question {
+    margin-bottom: 65px;
+  }
 }
 
 #question::after {

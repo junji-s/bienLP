@@ -38,9 +38,8 @@
 
 .ac_parent:last-of-type {
 	@include maxmq(sp) {
-		margin-bottom: 65px;
+		// margin-bottom: 65px;
 	}
-	margin-bottom: 138px;
 }
 
 .ac_parent:before {
@@ -101,6 +100,10 @@
 
 // 背景
 #question {
+	@include maxmq(sp) {
+		margin-bottom: 65px;
+	}
+	margin-bottom: 140px;
 	position: relative;
 }
 
