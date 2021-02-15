@@ -33,21 +33,32 @@
 }
 
 .bl_voice_container {
+	display: flex;
+	flex-wrap: wrap;
 	@include maxmq(sp) {
 		margin: 34px 0 64px;
 	}
+	justify-content: space-between;
 	margin: 60px 0 135px;
 }
 
-#voice {
-	position: relative;
+.el_voice_item {
+	flex-basis: 48%;
 }
 
-#voice::before {
-	content: url(../../../public/assets/img/bg/bg7.png);
-	@include z-index(bg);
-	left: -700px;
-	position: absolute;
-	top: 1700px;
-	z-index: 100;
+.el_voice_item:nth-of-type(3) , .el_voice_item:nth-of-type(4) {
+	margin-top: 40px;
 }
+
+// #voice {
+// 	position: relative;
+// }
+
+// #voice::before {
+// 	content: url(../../../public/assets/img/bg/bg7.png);
+// 	@include z-index(bg);
+// 	left: -700px;
+// 	position: absolute;
+// 	top: 1700px;
+// 	z-index: 100;
+// }

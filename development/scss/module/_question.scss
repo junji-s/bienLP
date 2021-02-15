@@ -38,9 +38,8 @@
 
 .ac_parent:last-of-type {
 	@include maxmq(sp) {
-		margin-bottom: 65px;
+		// margin-bottom: 65px;
 	}
-	margin-bottom: 138px;
 }
 
 .ac_parent:before {
@@ -101,13 +100,17 @@
 
 // 背景
 #question {
-	position: relative;
+	@include maxmq(sp) {
+		margin-bottom: 65px;
+	}
+	margin-bottom: 140px;
+	// position: relative;
 }
 
-#question::after {
-	content: url(../../../public/assets/img/bg/bg8.png);
-	@include z-index(bg);
-	left: -700px;
-	position: absolute;
-	top: 800px;
-}
+// #question::after {
+// 	content: url(../../../public/assets/img/bg/bg8.png);
+// 	@include z-index(bg);
+// 	left: -700px;
+// 	position: absolute;
+// 	top: 800px;
+// }

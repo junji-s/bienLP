@@ -7,7 +7,7 @@
 	}
 	margin: 0 auto;
 	max-width: 1160px;
-	padding: 150px 30px 30px 0;
+	padding: 150px 30px 30px 30px;
 }
 
 // FV
@@ -15,20 +15,20 @@
 	@include maxmq(sp) {
 		padding: 20px 20px 0 20px;
 	}
-	margin: 0 calc(50% - 50vw);
+	// margin: 0 calc(50% - 50vw);
 	padding: 50px 50px 0 50px;
-	position: relative;
-	width: 100vw;
+	// position: relative;
+	width: 100%;
 }
 
 .ly_fvBg {
-	align-items: center;
-	display: flex;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
+	// align-items: center;
+	// display: flex;
+	// height: 100%;
+	// left: 0;
+	// position: absolute;
+	// top: 0;
+	// width: 100%;
 }
 
 .ly_logo {
@@ -135,24 +135,24 @@
 		padding: 80px 0;
 	}
 	padding: 140px 0;
-	position: relative;
+	// position: relative;
 }
 
 // 背景
-.ly_top::after {
-	content: url(../../../public/assets/img/bg/bg1.png);
-	@include z-index(bg);
-	position: absolute;
-	right: -500px;
-	top: 100px;
-}
-.ly_top::before {
-	content: url(../../../public/assets/img/bg/bg2.png);
-	@include z-index(bg);
-	left: -500px;
-	position: absolute;
-	top: 1000px;
-}
+// .ly_top::after {
+// 	content: url(../../../public/assets/img/bg/bg1.png);
+// 	@include z-index(bg);
+// 	position: absolute;
+// 	right: -500px;
+// 	top: 100px;
+// }
+// .ly_top::before {
+// 	content: url(../../../public/assets/img/bg/bg2.png);
+// 	@include z-index(bg);
+// 	left: -500px;
+// 	position: absolute;
+// 	top: 1000px;
+// }
 
 @include maxmq(tab) {
 	.ly_top::after {
@@ -176,28 +176,23 @@
 .ly_cmponent_wrapper {
 	display: flex;
 	flex-wrap: wrap;
-}
-// 背景
-.ly_cmponent_wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
+	// position: relative;
 }
 
-.ly_cmponent_wrapper::before {
-	content: url(../../../public/assets/img/bg/bg3.png);
-	@include z-index(bg);
-	left: -500px;
-	position: absolute;
-	top: -1200px;
-}
-.ly_cmponent_wrapper::after {
-	content: url(../../../public/assets/img/bg/bg4.png);
-	@include z-index(bg);
-	position: absolute;
-	right: -700px;
-	top: -500px;
-}
+// .ly_cmponent_wrapper::before {
+// 	content: url(../../../public/assets/img/bg/bg3.png);
+// 	@include z-index(bg);
+// 	left: -500px;
+// 	position: absolute;
+// 	top: -1200px;
+// }
+// .ly_cmponent_wrapper::after {
+// 	content: url(../../../public/assets/img/bg/bg4.png);
+// 	@include z-index(bg);
+// 	position: absolute;
+// 	right: -700px;
+// 	top: -500px;
+// }
 
 .ly_cmponent_block {
 	width: 45%;
