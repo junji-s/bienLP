@@ -2516,6 +2516,7 @@ body.is_scrollRock {
 
 .el_recommendation_ttl {
   font-size: 1.875rem;
+  font-weight: bold;
   font-weight: 900;
   line-height: calc(55 / 33);
 }
@@ -2555,6 +2556,10 @@ body.is_scrollRock {
   .el_recommendation_banner:first-of-type {
     margin-bottom: 20px;
   }
+}
+
+.el_recommendation_accent {
+  color: #e6aa37;
 }
 
 .ly_footer {

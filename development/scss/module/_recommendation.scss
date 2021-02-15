@@ -9,6 +9,7 @@
 }
 .el_recommendation_ttl {
 	font-size: rem(30);
+	font-weight: bold;
 	font-weight: 900;
 	@include maxmq(tab) {
 		margin-bottom: 42px;
@@ -39,4 +40,8 @@
 	@include maxmq(tab) {
 		margin-bottom: 20px;
 	}
+}
+
+.el_recommendation_accent {
+	color: #e6aa37;
 }
