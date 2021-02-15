@@ -1,0 +1,42 @@
+.recommendation {
+	border-bottom: 1px solid #e0e0e0;
+	@include maxmq(tab) {
+		margin-top: 70px;
+		padding-bottom: 90px;
+	}
+	margin-top: 100px;
+	padding-bottom: 140px;
+}
+.el_recommendation_ttl {
+	font-size: rem(30);
+	font-weight: 900;
+	@include maxmq(tab) {
+		margin-bottom: 42px;
+	}
+	line-height: calc(55 / 33);
+}
+
+.bl_recommendation_flex {
+	display: flex;
+	@include maxmq(tab) {
+		align-items: center;
+		flex-direction: column;
+	}
+	justify-content: space-between;
+}
+
+.el_recommendation_banner {
+	background-color: #e0e0e0;
+	border-radius: 10px;
+	height: 160px;
+	@include maxmq(sp) {
+		width: 100%;
+	}
+	width: 385px;
+}
+
+.el_recommendation_banner:first-of-type {
+	@include maxmq(tab) {
+		margin-bottom: 20px;
+	}
+}

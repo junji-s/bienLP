@@ -1,0 +1,60 @@
+.bl_fv_txt {
+	padding-left: 10%;
+}
+
+// CVボタン
+.bl_fvcv {
+	background-color: #fdcd2d;
+	border-radius: 50%;
+	bottom: 31px;
+	height: 203px;
+	@include maxmq(sp) {
+		bottom: 15px;
+		height: 110px;
+		padding: 5px;
+		right: 15px;
+		width: 110px;
+	}
+	padding: 11px;
+	position: absolute;
+	right: 44px;
+	transition: background-color .3s;
+	width: 203px;
+}
+
+.el_fvcv_inner {
+	align-items: center;
+	border: 2px dashed #feecb1;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	width: 100%;
+}
+
+.fv_cv_img {
+	@include maxmq(sp) {
+		margin: 5px 5px 5px 0;
+		width: 23px;
+	}
+	margin-right: 10px;
+	width: 43px;
+}
+
+.fv_cv_txt {
+	color: #fff;
+	@include maxmq(sp) {
+		font-size: rem(11);
+		margin: 0 0 3px 0;
+	}
+	line-height: calc(27 / 17);
+	margin-top: 16px;
+	text-align: center;
+	width: 74px;
+}
+
+// マウスイベント
+.bl_fvcv:hover , .bl_fvcv:hover {
+	background-color: #ffc400c8;
+}

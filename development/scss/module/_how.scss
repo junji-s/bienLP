@@ -1,0 +1,20 @@
+.el_how_ttl {
+	font-size: rem(24);
+	@include maxmq(sp) {
+		font-size: rem(18);
+		margin-top: 114px;
+	}
+	margin-top: 204px;
+	text-align: center;
+}
+
+.el_how_subttl {
+	font-size: rem(40);
+	@include maxmq(sp) {
+		font-size: rem(30);
+		margin-top: 54px;
+	}
+	line-height: 1.5em;
+	margin-top: 68px;
+	text-align: center;
+}

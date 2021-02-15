@@ -1,0 +1,55 @@
+.ly_cv {
+	@include maxmq(tab) {
+		padding: 0;
+	}
+	padding: 54px 88px 88px 0;
+	position: relative;
+}
+.ly_cv::after {
+	background-color: #fff7ea;
+	border-radius: 20px;
+	content: "";
+	height: 100%;
+	@include z-index(bg);
+	@include maxmq(tab) {
+		height: 97%;
+		width: 100%;
+	}
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 80%;
+}
+
+.ly_cv_container {
+	display: flex;
+	@include maxmq(tab) {
+		align-items: center;
+		flex-direction: column;
+	}
+	justify-content: space-between;
+}
+
+.ly_cv_img {
+	@include maxmq(tab) {
+		display: none;
+	}
+	width: calc(50% - 70px);
+}
+
+.ly_cv_about {
+	@include maxmq(tab) {
+		margin: 0 auto;
+		width: 100%;
+	}
+	width: 50%;
+}
+
+.ly_cv_btn {
+	display: flex;
+	@include maxmq(pc) {
+		flex-direction: column;
+	}
+	justify-content: flex-start;
+	margin-top: 28px;
+}

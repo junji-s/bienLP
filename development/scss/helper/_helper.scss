@@ -1,7 +1,6 @@
 /* helperスタイル */
 /************************************************/
 // スタイル補助に用いる。!important推奨。keyvalueの形で省略化。
-
 // 余白クラス（for文で量産）
 $spaceClass: true !default;
 $spacePadding: false !default;
@@ -23,5 +22,27 @@ $space_endValue: 15 !default;
 				padding-bottom: 10px * $i !important;
 			}
 		}
+	}
+}
+
+// ios100vh対策
+.hp_100vh {
+	min-height: calc(var(--vh, 1vh) * 100);
+}
+
+// 改行制御
+.hp_brPc {
+	@include maxmq(sp) {
+		display: none;
+	}
+}
+.hp_brTab {
+	@include minmq(tab) {
+		display: none;
+	}
+}
+.hp_brSp {
+	@include minmq(sp) {
+		display: none;
 	}
 }

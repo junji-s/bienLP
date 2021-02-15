@@ -1,0 +1,39 @@
+// .bl_about_block {
+// 	position: relative;
+// }
+
+// .bl_about_bg1 {
+// 	background-image: url(../../../public/assets/img/cmponent/peptide.png);
+// }
+// .bl_about_bg2 {
+// 	background-image: url(../../../public/assets/img/cmponent/relief.png);
+// }
+// .bl_about_bg1::after {
+// 	content: url(../../../public/assets/img/cmponent/peptide.png);
+// 	position: absolute;
+// 	right: 0;
+// 	top: 0;
+// }
+// .bl_about_bg2::after {
+// 	content: url(../../../public/assets/img/cmponent/relief.png);
+// 	// left: 50%;
+// 	position: absolute;
+// 	top: 0;
+// }
+
+// .el_about_txt {
+// 	width: 280px;
+// }
+// .el_about_img {
+// 	width: 433px;
+// }
+
+.bl_about_bg1 {
+	margin-top: 70px;
+}
+.bl_about_bg2 {
+	@include maxmq(sp) {
+		margin-top: 41px;
+	}
+	margin-top: 170px;
+}

@@ -8,7 +8,7 @@
 }
 // PC基準(〜未満)
 @mixin maxmq($breakpoint: sp) {
-	@media not all and (max-width: #{map-get($mq-breakpoints, $breakpoint)}) {
+	@media screen and (max-width: #{map-get($mq-breakpoints, $breakpoint)}) {
 		@content;
 	}
 }

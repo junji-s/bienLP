@@ -1,0 +1,115 @@
+.bl_top_about {
+	flex-basis: 50%;
+	@include maxmq(tab) {
+		width: 100%;
+	}
+}
+.bl_top_img {
+	@include maxmq(tab) {
+		background-image: url(../../../public/assets/img/top/top.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 400px;
+		@include maxmq(sp) {
+			width: 80%;
+		}
+		@include maxmq(xs) {
+			height: 250px;
+		}
+		width: 50%;
+	}
+}
+.bl_top_img::after {
+	background-image: url(../../../public/assets/img/top/top.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 500px;
+	@include maxmq(tab) {
+		position: static;
+	}
+	position: absolute;
+	top: -150px;
+	width: 50%;
+}
+
+.el_top_ttl {
+	font-size: rem(44);
+	font-weight: 900;
+	@include maxmq(tab) {
+		text-align: center;
+	}
+	@include maxmq(sp) {
+		font-size: 7vw;
+	}
+	letter-spacing: .1em;
+	line-height: calc(65 / 44);
+	position: relative;
+}
+
+.el_top_under::after {
+	background-image: url(../../../../public/assets/decoration/border/top/top_dashed.svg);
+	background-repeat: no-repeat;
+	bottom: -19px;
+	content: "";
+	height: 10px;
+	@include maxmq(tab) {
+		display: none;
+	}
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.bl_top_point {
+	color: $fontcolor_accent;
+	font-size: rem(22);
+	@include maxmq(tab) {
+		margin-top: 50px;
+		text-align: center;
+	}
+	@include maxmq(sp) {
+		font-size: rem(15);
+		margin-top: 40px;
+	}
+	margin-top: 60px;
+}
+
+.bl_top_pointBlock {
+	@include maxmq(tab) {
+		margin: 0 auto;
+		width: 60%;
+	}
+	@include maxmq(sp) {
+		width: 60%;
+	}
+	@include maxmq(xs) {
+		width: 90%;
+	}
+}
+
+.el_top_pointList {
+	align-items: center;
+	display: flex;
+	@include maxmq(sp) {
+		font-size: 2.5vw;
+	}
+	@include maxmq(xs) {
+		font-size: 3.5vw;
+	}
+	margin-top: 30px;
+}
+.el_top_pointList:before {
+	background-image: url(../../../public/assets/decoration/listDot/dot.svg);
+	content: "";
+	height: .63em;
+	@include maxmq(sp) {
+		background-repeat: no-repeat;
+		height: 1em;
+		width: 1em;
+	}
+	margin-right: 23.5px;
+	width: .75em;
+}

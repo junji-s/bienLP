@@ -1,0 +1,81 @@
+.el_cmponent_ttl {
+	font-size: rem(24);
+	@include maxmq(sp) {
+		margin-top: 120px;
+		text-align: center;
+	}
+	margin-top: 212px;
+}
+
+.el_cmponent_subttl {
+	font-size: rem(35);
+	@include maxmq(sp) {
+		font-size: rem(30);
+		text-align: center;
+	}
+	line-height: 1.5em;
+	margin-top: 44px;
+}
+
+.el_cmponent_txt {
+	@include maxmq(tab) {
+		line-height: calc(32 / 15);
+		margin-top: 40px;
+		width: 100%;
+	}
+	line-height: calc(36 / 16);
+	margin-top: 50px;
+	width: 447px;
+}
+
+.bl_cmponent_list {
+	@include maxmq(tab) {
+		margin: 0 auto;
+		width: 60%;
+	}
+	margin-left: auto;
+	width: 323px;
+}
+
+.el_cmponent_team {
+	font-size: rem(22);
+	position: relative;
+}
+
+.ly_cmponent_block .el_cmponent_team::before {
+	left: -75px;
+	position: absolute;
+	top: -5px;
+}
+
+.ly_cmponent_block:nth-of-type(1)  .el_cmponent_team::before {
+	content: url(../../../public/assets/logo/cmponent/01.png);
+}
+.ly_cmponent_block:nth-of-type(2)  .el_cmponent_team::before {
+	content: url(../../../public/assets/logo/cmponent/02.png);
+}
+.ly_cmponent_block:nth-of-type(3)  .el_cmponent_team::before {
+	content: url(../../../public/assets/logo/cmponent/03.png);
+}
+.ly_cmponent_block:nth-of-type(4)  .el_cmponent_team::before {
+	content: url(../../../public/assets/logo/cmponent/04.png);
+}
+.ly_cmponent_block:nth-of-type(5)  .el_cmponent_team::before {
+	content: url(../../../public/assets/logo/cmponent/05.png);
+}
+.ly_cmponent_block:nth-of-type(6)  .el_cmponent_team::before {
+	content: url(../../../public/assets/logo/cmponent/06.png);
+}
+
+.el_cmponent_discription {
+	font-size: rem(14);
+	@include maxmq(tab) {
+		margin-top: 20px;
+	}
+	line-height: calc(31 /14);
+	margin-top: 48px;
+}
+
+.el_cmponent_img {
+	margin-top: 20px;
+}

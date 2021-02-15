@@ -1,0 +1,8 @@
+.bl_logo {
+	height: 64px;
+	@include maxmq(sp) {
+		height: 35px;
+		width: 73px;
+	}
+	width: 134px;
+}

@@ -17,41 +17,34 @@
 
 // layout：サイトレイアウトのスタイル  （ly_）
 @import "layout/layout";
+@import "layout/ly_cv";
 
-// elementmodule：最小粒度  （el_）
-@import "module/elementmodule/elementmodule";
+// module：エレメント集合ブロック  
+@import "module/txt_style";
+@import "module/fv";
+@import "module/logo";
+@import "module/hamburgerBtn";
+@import "module/header";
+@import "module/top";
+@import "module/cv";
+@import "module/tab";
+@import "module/influence";
+@import "module/cmponent";
+@import "module/slide";
+@import "module/about";
+@import "module/how";
+@import "module/questionnaire";
+@import "module/voice";
+@import "module/story";
+@import "module/question";
+@import "module/recommendation";
+@import "module/footer";
 
-// blockmodule：エレメント集合ブロック  （bl_）
-@import "module/blockmodule/blockmodule";
 
 // helper：補助スタイル  （hp_）
 @import "helper/helper";
-
-// unipue：ある1ページでしか使用されないスタイル  （un_）
-@import "unipue/top";
-@import "unipue/x";
-@import "unipue/x2";
-@import "unipue/x3";
-@import "unipue/x4";
 
 // program：js等のプログラムに対応するスタイル  
 // （jsで要素を取得させるクラス  js_）
 // （要素の状態を管理するクラス  is_）
 @import "program/program";
-
-// original：上記に当てはまらないスタイル
-@import "original/original"
-
-
-
-
-
-
-
-
-
-
-
-
-
-

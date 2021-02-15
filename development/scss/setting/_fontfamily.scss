@@ -1,29 +1,4 @@
 // フォファミリー設定
-
-// （下記は遊ゴシックを採用した場合） ////////////////////
-$fontFamily: -apple-system,
-BlinkMacSystemFont,
-Roboto,
-"Segoe UI",
-"Helvetica Neue",
-HelveticaNeue,
-YuGothic,
-"Yu Gothic Medium",
-"Yu Gothic",
-Verdana,
-Meiryo,
-sans-serif;
-
-//  太字：セクションタイトルなど（WinではSegoe UI semiboldを適用。Yu Gothic Medium→Yu Gothic） ////////////////////
-$ttl-fontFamily: -apple-system,
-BlinkMacSystemFont,
-Roboto,
-"Segoe UI semibold",
-"Helvetica Neue",
-HelveticaNeue,
-YuGothic,
-"Yu Gothic",
-"Segoe UI",
-Verdana,
-Meiryo,
-sans-serif;
+$fontfamily_ttl: "メイリオ", Meiryo,"ヒラギノ角ゴシック","Hiragino Sans","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3",sans-serif;
+$fontfamily_txt: "Noto Sans JP", sans-serif;
+$fontfamily_en: "Damion", cursive;

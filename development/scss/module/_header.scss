@@ -1,0 +1,102 @@
+/**************** 以下、メニューのスタイリング ****************/
+.menu {
+	background-color: rgba(167, 148, 58, .7);
+	color: #efefef;
+	/* メニューを縦に */
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	position: fixed;
+	/* メニューの位置マイナス指定で画面外に */
+	right: -100%;
+	transition: all .3s;
+	width: 70%;
+}
+
+.menu-list {
+	align-items: center;
+	/* メニューテキスト位置をリスト内中心に */
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	width: 100%;
+}
+
+.menu-list:hover {
+	background-color: rgba(255, 255, 255, .5);
+	color: #333;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+/***** メニューオープン時位置0にして画面内に *****/
+.menu.is_click {
+	position: absolute;
+	right: 0;
+}
+
+/* 600px以上はハンバーガーボタン非表示、ヘッダー固定 */
+@media screen and (min-width: 600px) {
+	.btn {
+		display: none;
+	}
+
+	.menu {
+		/* メニューを横に */
+		display: flex;
+		flex-direction: row;
+		height: 100px;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+	}
+}
+/**************** ここまで、メニューのスタイリング ****************/
+
+// ハンバーガーメニューオープン時の背景固定
+body.is_scrollRock {
+	overflow: hidden;
+}
+
+.bl_header_nav {
+	width: 571px;
+	z-index: 30;
+}
+
+.bl_header_logo {
+	@include maxmq(sp) {
+		margin: 0 auto 74px;
+	}
+	margin: 0 auto 134px;
+	width: 180px;
+}
+
+.bl_header_container {
+	align-items: center;
+	display: flex;
+	@include maxmq(sp) {
+		flex-direction: column;
+		height: 370px;
+		justify-content: center;
+	}
+	justify-content: space-between;
+}
+
+.el_header_block {
+	height: 100%;
+}
+
+.el_header_list {
+	@include maxmq(sp) {
+		font-size: rem(14);
+		line-height: 3.5em;
+	}
+	text-align: center;
+}
+.el_header_list:not(:first-of-type) {
+	@include maxmq(sp) {
+		margin-top: 0;
+	}
+	margin-top: 60px;
+}

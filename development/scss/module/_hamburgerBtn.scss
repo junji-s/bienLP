@@ -1,0 +1,93 @@
+/* blockModule */
+/************************************************/
+
+/* ハンバーガーボタン */
+.bl_hamburgerbtn {
+	height: 26px;
+	@include maxmq(sp) {
+		height: 16px;
+		width: 24px;
+	}
+	pointer-events: auto;
+	width: 35px;
+}
+
+.bl_hamburgerbtn_line {
+	background-color: #fff;
+	display: block;
+	height: 1px;
+	position: relative;
+	transition: all .3s;
+	width: 100%;
+}
+
+// 上下のバーガー線 
+.bl_hamburgerbtn_line::before , .bl_hamburgerbtn_line::after {
+	background-color: inherit;
+	content: "";
+	height: 100%;
+	position: absolute;
+	transition: .3s;
+	width: 100%;
+}
+
+.bl_hamburgerbtn_line::before {
+	transform: translateY(-7px);
+}
+
+.bl_hamburgerbtn_line::after {
+	transform: translateY(7px);
+}
+
+/***** ボタンクリック時 *****/
+.ly_hamburgerbtn.is_click {
+	background-color: #fff;
+	transition: .3s;
+}
+
+.bl_hamburgerbtn_line.is_click {
+	background-color: transparent;
+}
+
+.bl_hamburgerbtn_line.is_click::before , .bl_hamburgerbtn_line.is_click::after {
+	background-color: #444;
+	content: "";
+	transition: .3s;
+}
+
+.bl_hamburgerbtn_line.is_click::before {
+	transform: rotate(135deg);
+}
+
+.bl_hamburgerbtn_line.is_click::after {
+	transform: rotate(-135deg);
+}
+
+// マウスオーバー
+.ly_hamburgerbtn:hover {
+	background: #fff;
+	transition: .3s;
+}
+
+.bl_hamburgerbtn:hover .bl_hamburgerbtn_line {
+	background: #444;
+}
+.bl_hamburgerbtn:hover .bl_hamburgerbtn_line.is_click {
+	background-color: transparent;
+}
+.bl_hamburgerbtn:hover .bl_hamburgerbtn_line::before {
+	background: #444;
+}
+.bl_hamburgerbtn:hover .bl_hamburgerbtn_line::after {
+	background: #444;
+}
+
+.bl_hamburgerbtn_line.is_click::before , .bl_hamburgerbtn_line.is_click::after {
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, .7);
+}
+.bl_hamburgerbtn:focus .bl_hamburgerbtn_line.is_click {
+	box-shadow: 0 0 0  rgba(0, 0, 0, 0);
+}
+.bl_hamburgerbtn_line.is_click::before , .bl_hamburgerbtn_line.is_click::after {
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, .7);
+}
