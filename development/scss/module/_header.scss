@@ -93,10 +93,16 @@ body.is_scrollRock {
 		line-height: 3.5em;
 	}
 	text-align: center;
+	transition: .3s;
 }
 .el_header_list:not(:first-of-type) {
 	@include maxmq(sp) {
 		margin-top: 0;
 	}
 	margin-top: 60px;
+}
+
+.el_header_list:hover {
+	opacity: .7;
+	text-decoration: underline;
 }

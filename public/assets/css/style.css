@@ -578,6 +578,7 @@ body.is_scrollRock {
 
 .el_header_list {
   text-align: center;
+  transition: .3s;
 }
 
 @media screen and (max-width: 600px) {
@@ -595,6 +596,11 @@ body.is_scrollRock {
   .el_header_list:not(:first-of-type) {
     margin-top: 0;
   }
+}
+
+.el_header_list:hover {
+  opacity: .7;
+  text-decoration: underline;
 }
 
 .bl_top_about {

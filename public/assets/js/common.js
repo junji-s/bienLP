@@ -5,7 +5,7 @@ $(function () {
   $('a[href^="#"]').click(function () {
     var href = $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
+    var position = target.offset().top - 100;
     var speed = 500;
     $("html, body").animate({
       scrollTop: position
@@ -46,11 +46,25 @@ $(function () {
   // ボタンクリックで各要素のクラスつけ外し
   var btn = $('.ly_hamburgerbtn ,.js_hamburgerbtn_line');
   var menu = $('.ly_header');
+  var link = $('.el_header_list > a');
 
   $('.js_hamburgerbtn').on('click', function () {
     btn.toggleClass('is_click');
     menu.toggleClass('is_open').fadeToggle();
 
+    if (btn.hasClass('is_click')) {
+      sclollRock()
+      $('body').css('padding-right', '15px');
+    } else {
+      sclollUnrock()
+      $('body').css('padding-right', '0');
+    }
+  })
+
+  link.on('click', function () {
+    menu.hide();
+    btn.toggleClass('is_click');
+    menu.toggleClass('is_open');
     if (btn.hasClass('is_click')) {
       sclollRock()
       $('body').css('padding-right', '15px');
