@@ -55,6 +55,11 @@
 .el_influence_subttl {
 	font-size: rem(32);
 	font-weight: 900;
+	@include maxmq(sp) {
+		font-size: rem(28);
+		text-align: center;
+		width: 100%;
+	}
 	line-height: calc(39 / 25);
 	margin-top: 42px;
 	text-align: center;

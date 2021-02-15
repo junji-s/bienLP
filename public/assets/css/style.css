@@ -250,6 +250,7 @@ img {
   .ly_cv_container {
     align-items: center;
     flex-direction: column;
+    padding: 10px;
   }
 }
 
@@ -623,7 +624,7 @@ body.is_scrollRock {
   }
 }
 
-@media screen and (max-width: 960px) and (max-width: 480px) {
+@media screen and (max-width: 960px) and (max-width: 450px) {
   .bl_top_img {
     height: 250px;
   }
@@ -717,7 +718,7 @@ body.is_scrollRock {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
   .bl_top_pointBlock {
     width: 90%;
   }
@@ -735,7 +736,7 @@ body.is_scrollRock {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
   .el_top_pointList {
     font-size: 3.5vw;
   }
@@ -959,7 +960,7 @@ body.is_scrollRock {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
   .bl_listcontainer {
     width: 100%;
   }
@@ -984,6 +985,13 @@ body.is_scrollRock {
   .el_list {
     height: 80px;
     width: 80px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .el_list {
+    height: 65px;
+    width: 65px;
   }
 }
 
@@ -1634,6 +1642,14 @@ body.is_scrollRock {
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .el_influence_subttl {
+    font-size: 1.75rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+
 .bl_influence_wrapper {
   background-image: url(../../../public/assets/img/Influence/influence_bg.jpg);
   margin-top: 102px;
@@ -1719,7 +1735,7 @@ body.is_scrollRock {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
   .bl_influence_container:last-of-type .el_influence_img {
     margin-top: -50px;
   }
@@ -2379,7 +2395,7 @@ body.is_scrollRock {
 
 @media screen and (max-width: 600px) {
   .ly_footer {
-    padding: 70px 15px 180px;
+    padding: 70px 15px 86px;
   }
 }
 
