@@ -162,10 +162,6 @@
 		height: 80px;
 		width: 80px;
 	}
-	@include maxmq(xs) {
-		height: 70px;
-		width: 70px;
-	}
 	padding: 5px;
 	width: 112px;
 }

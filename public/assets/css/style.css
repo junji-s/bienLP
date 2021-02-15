@@ -987,13 +987,6 @@ body.is_scrollRock {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .el_list {
-    height: 70px;
-    width: 70px;
-  }
-}
-
 .el_listInner {
   align-items: center;
   border: 1px solid #f3a700;
