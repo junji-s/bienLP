@@ -1319,8 +1319,6 @@ body.is_scrollRock {
 }
 
 .tab_menu_box {
-  position: absolute;
-  top: 0;
   width: 100%;
 }
 
