@@ -29,24 +29,20 @@
   stroke: #DEAB4F;
   stroke-width: 50px;
   stroke-dasharray: 1000;
-  animation: circleAnimation linear 3s;
 }
 .circleSvg .circle_75 {
   stroke-dasharray: 710;
-  animation: circleAnimation2 linear 3s;
 }
 .circleSvg .circle_92 {
   stroke-dasharray: 860;
-  animation: circleAnimation3 linear 3s;
 }
 .circleSvg .circle_gray {
   stroke: #F7F7F7;
-  animation: circleAnimation linear 4.2s;
 }
 .circleSvg .circle_gray_2 {
   stroke: #F7F7F7;
-  animation: circleAnimation linear 3.5s;
 }
+
 
 
 
@@ -111,13 +107,6 @@
   font-size: 14px;
   color: #444;
   margin-top: 60px;
-}
-
-
-body {
-  width: 100vw;
-  position: relative;
-  overflow-x: hidden;
 }
 
 

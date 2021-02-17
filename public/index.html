@@ -5,45 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="" /> <!-- ページ説明 ※80~90文字 -->
 
-    <!-- SNS共通 -->
-    <meta property="og:url" content="" />
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="" />
-    <meta property="og:locale" content="ja_JP" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="" />
-
-    <!-- Facebook -->
-    <meta property="fb:app_id" content="" />
-
-    <!-- タイトルタグ ※35文字程度  -->
     <title>ビアン鼻用保湿オイル</title>
-
-    <!-- ファビコン -->
-    <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
 
     <!-- 外部ファイル読み込み -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/destyle.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/circle.css">
+    <link rel="stylesheet" href="assets/css/add.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
   </head>
 
   <body>
-    <div class="ly_fv hp_100vh">
-      <!-- <div class="ly_fvBg hp_100vh"> -->
-      <video class="video" src="./assets/video/bien_0205_A_fullbit.mp4" muted autoplay loop></video>
+
+    <!-- FV -->
+    <div class="ly_fv fvDiv">
+      <video class="video" src="./assets/video/bien_0205_A_fullbit.mp4" muted autoplay loop playsinline></video>
       <div class="ly_logo">
         <h1 class="bl_logo"><img src="assets/logo/common/logo.svg" alt="ビアン鼻用保湿オイル"></h1>
       </div>
@@ -52,7 +32,7 @@
           <span class="bl_hamburgerbtn_line js_hamburgerbtn_line"></span>
         </button>
       </div>
-      <div class="bl_fv_txt">
+      <div class="fvTxt">
         <picture>
           <source media="(min-width: 961px)" srcset="./assets/img/txt_bg/fv_pc.png">
           <source media="(max-width: 960px)" srcset="./assets/img/txt_bg/fv_sp.png">
@@ -65,9 +45,8 @@
           <span class="fv_cv_txt">ご購入は<br class="hp_brSp">こちら</span>
         </a>
       </div>
-      <!-- </div> -->
     </div>
-    <!-- /.fv -->
+    <!-- FV -->
 
 
     <header class="ly_header js_header hp_100vh_top">
@@ -118,7 +97,10 @@
 
 
     <main>
-      <div class="ly_main">
+
+      <div class="ly_main" style="padding-top: 50px;">
+
+        <!-- 累計販売台数10万本 -->
         <div class="ly_top scroll_block">
           <div class="ly_top_wrap">
             <div class="bl_top_about">
@@ -137,12 +119,14 @@
                 <li class="el_top_pointList">新デザインパッケージ</li>
               </ul>
             </div>
-            <div class="bl_top_img"></div>
+            <div class="bl_top_img">
+              <img src="./assets/img/add/bg1.png" class="kumo1">
+            </div>
           </div>
         </div>
-        <!-- /.top -->
+        <!-- 累計販売台数10万本 -->
 
-
+        <!-- CTA -->
         <div class="ly_cv scroll_block">
           <div class="ly_cv_container">
             <div class="ly_cv_img">
@@ -205,11 +189,14 @@
               </span>
             </a>
           </div>
+          <img src="./assets/img/add/bg2.png" class="kumo2">
         </div>
-        <!-- /.cv -->
+        <!-- CTA -->
+      </div>
 
-
-        <section id="distress" class="scroll_block">
+      <!-- こんなお悩みをおもちの方に -->
+      <section id="distress" class="scroll_block">
+        <div class="ly_main" style="padding-top: 0; padding-bottom: 0;">
           <h2 class="tab_distress_ttl">
             <picture>
               <source media="(min-width: 600px)" srcset="./assets/img/title/distress_title.png">
@@ -224,7 +211,7 @@
               <button type="button" class="tab_btn js_tab_btn"><span class="tab_btn_img"><img src="./assets/logo/distress/distress_tab03.svg" alt=""></span>お仕事・<br class="hp_brSp">レジャーの<br class="hp_brSp">時に<span class="arrow"><img src="./assets/logo/distress/arrow.svg" alt=""></span></button>
             </div>
             <div class="tab_menu_container">
-
+  
               <!-- メニュー1 -->
               <div class="tab_menu_box js_tab_menu_box">
                 <h3 class="tab_ttl"><img src="./assets/img/distress/ttl.png" alt="鼻炎にお困りの方"></h3>
@@ -234,13 +221,13 @@
                   <li class="tab_menu_flexList"><img src="./assets/img/distress/distress3.png" alt="くしゃみが止まらない"></li>
                   <li class="tab_menu_flexList"><img src="./assets/img/distress/distress4.png" alt="寝ている時にいびきをかく"></li>
                 </ul>
-
+  
                 <div class="tab_menu_reason">
                   <span class="el_borderBox el_border_leftTop"></span>
                   <span class="el_borderBox el_border_leftBottom"></span>
                   <span class="el_borderBox el_border_rightTop"></span>
                   <span class="el_borderBox el_border_rightBottom"></span>
-
+  
                   <h4 class="tab_subttl">なぜ鼻炎が<br class="hp_brTab">起こるのか？</h4>
                   <p class="tab_menu_innerTxt">鼻炎とは、空気中に浮遊する花粉やハウスダストなどの原因物質「アレルゲン」を吸い込み、<br class="hp_brPc">その成分が鼻の粘膜から体内に入ることによって起こるアレルギー反応です。</p>
                   <div class="tab_menu_logo tab_menu_logoPC">
@@ -255,9 +242,10 @@
                     </div>
                   </div>
                 </div>
+                
               </div>
               <!-- メニュー1 -->
-
+  
               <!-- メニュー2 -->
               <div class="tab_menu_box js_tab_menu_box">
                 <h3 class="tab_ttl"><img src="./assets/img/distress/ttl.png" alt="鼻炎にお困りの方"></h3>
@@ -285,11 +273,11 @@
                       </div>
                     </div>
                   </div>
-
+  
                 </div>
               </div>
               <!-- メニュー2 -->
-
+  
               <!-- メニュー3 -->
               <div class="tab_menu_box js_tab_menu_box">
                 <h3 class="tab_ttl"><img src="./assets/img/distress/ttl.png" alt="鼻炎にお困りの方"></h3>
@@ -317,19 +305,22 @@
                       </div>
                     </div>
                   </div>
-
+  
                 </div>
-
+  
               </div>
               <!-- メニュー3 -->
             </div>
           </nav>
-        </section>
-        <!--/#distress -->
+        </div>
+      </section>
+      <!-- こんなお悩みをおもちの方に -->
+      
+      <div class="ly_main">
 
-
+        <!-- ビアンの3つの効果 -->
         <section id="influence" class="scroll_block">
-          <h2 class="el_influence_ttl"><img src="./assets/img/Influence/ttl.png" alt="ビアンの3つの効果"></h2>
+          <h2 class="el_influence_ttl" style="margin-top: 50px;"><img src="./assets/img/Influence/ttl.png" alt="ビアンの3つの効果"></h2>
           <div class="bl_influence_block">
             <picture>
               <source media="(min-width: 961px)" srcset="./assets/img/title/influence_list.png">
@@ -398,9 +389,9 @@
             </div>
           </div>
         </section>
-        <!-- /#influence -->
+        <!-- ビアンの3つの効果 -->
 
-
+        <!-- CTA -->
         <div class="ly_cv scroll_block">
           <div class="ly_cv_container">
             <div class="ly_cv_img">
@@ -463,11 +454,13 @@
               </span>
             </a>
           </div>
+          <img src="./assets/img/add/bg2.png" class="kumo2">
         </div>
-        <!-- /.cv -->
-        <!-- /.cv -->
+        <!-- CTA -->
 
+        <!-- 成分について -->
         <section id="cmponent" class="scroll_block">
+          <img src="./assets/img/add/bg1.png" class="kumo3">
           <h2 class="el_cmponent_ttl">
             <picture>
               <source media="(min-width: 961px)" srcset="./assets/img/cmponent/cmponet_ttl.png">
@@ -602,10 +595,12 @@
             </div>
           </div>
         </section>
+        <!-- 成分について -->
+
       </div>
 
 
-      <!-- /#cmponent -->
+      <!-- 抗菌ペプチド -->
       <div class="ly_about scroll_block">
         <div class="bl_about_block bl_about_bg1">
           <picture>
@@ -622,9 +617,12 @@
           </picture>
         </div>
       </div>
-      <!-- /.about -->
+      <!-- 抗菌ペプチド -->
 
-      <div class="ly_main scroll_block">
+      
+      <div class="ly_main scroll_block" style="padding-top: 0;">
+
+        <!-- ご使用方法 -->
         <section id="how_to_use">
           <h2 class="el_how_ttl"><img src="./assets/img/how_to_use/ttl.png" alt="ご使用方法"></h2>
           <h3 class="el_how_subttl">
@@ -650,13 +648,10 @@
                   <div class="tab_menuhow_flexItem"><img src="./assets/img/how_to_use/3.png" alt="鼻を指で上から押さえ、鼻全体にオイルをなじませてください。ウイルス・花粉・PM2.5の付着を抑制します。"></div>
                 </div>
               </div>
-              <div class="tab_menuhow_block"><img src="./assets/img/how_to_use/4.png" alt="1日3回を目安にお使いいただくとより効果的です。"></div>
-              <!-- <picture>
-                <source media="(min-width: 600px)" srcset="./assets/img/how_to_use/how01.png">
-                <source media="(max-width: 599px)" srcset="./assets/img/how_to_use/how_sp01.png">
-                <img src="./assets/img/how_to_use/how01.png" alt="">
-              </picture> -->
+              <div class="tab_menuhow_block" style="text-align: center;"><img src="./assets/img/how_to_use/4.png" alt="1日3回を目安にお使いいただくとより効果的です。" style="width:auto; max-width: 100%;"></div>
             </div>
+            <!-- メニュー1 -->
+
             <!-- メニュー2 -->
             <div class="tab_menuhow_box js_tab_menuhow_box">
               <picture>
@@ -665,12 +660,14 @@
                 <img src="./assets/img/how_to_use/how01.png" alt="">
               </picture>
             </div>
+            <!-- メニュー2 -->
           </div>
         </section>
-        <!-- /#how_to_use -->
+        <!-- ご使用方法 -->
 
-
+        <!-- お客様アンケート評価 -->
         <section id="questionnaire" class="scroll_block">
+          <img src="./assets/img/add/bg2.png" class="kumo4">
           <h2 class="el_questionnaire_ttl"><img src="./assets/img/questionnaire/ttl.png" alt="お客様アンケート評価"></h2>
           <h3 class="el_questionnaire_subttl">
             <picture>
@@ -683,7 +680,7 @@
             <!-- 円の実装 -->
             <div class="circlePc">
               <ul class="circleList">
-                <li>
+                <li class="scroll_block">
                   <div class="circleDiv">
                     <svg class="circleSvg">
                       <circle class="circle" cx="175" cy="175" r="150"/>
@@ -692,7 +689,7 @@
                     <span class="circleDiv__number">100<span>%</span></span>
                   </div>
                 </li>
-                <li>
+                <li class="scroll_block">
                   <div class="circleDiv">
                     <svg class="circleSvg">
                       <circle class="circle circle_gray" cx="175" cy="175" r="150"/>
@@ -704,7 +701,7 @@
                 </li>
               </ul>
               <ul class="circleList">
-                <li>
+                <li class="scroll_block">
                   <div class="circleDiv">
                     <svg class="circleSvg">
                       <circle class="circle circle_gray_2" cx="175" cy="175" r="150"/>
@@ -714,7 +711,7 @@
                     <span class="circleDiv__number">92<span>%</span></span>
                   </div>
                 </li>
-                <li>
+                <li class="scroll_block">
                   <div class="circleDiv">
                     <svg class="circleSvg">
                       <circle class="circle circle_gray_2" cx="175" cy="175" r="150"/>
@@ -724,7 +721,7 @@
                     <span class="circleDiv__number">92<span>%</span></span>
                   </div>
                 </li>
-                <li>
+                <li class="scroll_block">
                   <div class="circleDiv">
                     <svg class="circleSvg">
                       <circle class="circle" cx="175" cy="175" r="150"/>
@@ -761,10 +758,12 @@
             <!-- 円の実装 -->
           </div>
         </section>
-        <!-- /#questionnaire -->
+        <!-- お客様アンケート評価 -->
 
 
+        <!-- お客様の声 -->
         <section id="voice" class="scroll_block">
+          <img src="./assets/img/add/bg1.png" class="kumo5">
           <h2 class="el_voice_ttl"><img src="./assets/img/voice/ttl.png" alt="お客様の声"></h2>
           <h3 class="el_voice_subttl">
             <picture>
@@ -780,9 +779,9 @@
             <div class="el_voice_item"><img src="./assets/img/voice/voice4.png" alt=""></div>
           </div>
         </section>
-        <!-- /#voice -->
+        <!-- お客様の声 -->
 
-
+        <!-- CTA -->
         <div class="ly_cv scroll_block">
           <div class="ly_cv_container">
             <div class="ly_cv_img">
@@ -845,11 +844,14 @@
               </span>
             </a>
           </div>
+          <img src="./assets/img/add/bg2.png" class="kumo2-2">
         </div>
-        <!-- /.cv -->
-        <!-- /.cv -->
-      </div>
+        <!-- CTA -->
 
+      </div>
+      
+
+      <!-- ビアン誕生ストーリー -->
       <section id="story" class="bl_story scroll_block">
         <div class="bl_story_container">
           <div class="bl_story_flex">
@@ -882,10 +884,11 @@
           </div>
         </div>
       </section>
-      <!-- /#story -->
+      <!-- ビアン誕生ストーリー -->
 
 
-      <div class="ly_main scroll_block">
+      <!-- よくあるご質問 -->
+      <div class="ly_main scroll_block" style="padding-top: 0;">
         <section id="question">
           <h2 class="el_question_ttl"><img src="./assets/img/question/ttl.png" alt="よくあるご質問"></h2>
           <div class="ac">
@@ -964,8 +967,8 @@
               </span>
             </a>
           </div>
+          <img src="./assets/img/add/bg2.png" class="kumo2-2">
         </div>
-        <!-- /.cv -->
         <!-- /.cv -->
 
 
@@ -979,7 +982,8 @@
         <!-- /.recommendation -->
 
       </div>
-      <!-- /.ly_main -->
+      <!-- よくあるご質問 -->
+
     </main>
     <!-- main -->
 

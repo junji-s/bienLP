@@ -1,0 +1,196 @@
+.fvDiv {
+  position: relative;
+}
+
+.fvDiv video {
+  min-height: 645px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fvDiv .fvTxt {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  z-index: 2;
+}
+
+@media (max-width: 575.98px) {
+  .fvDiv .fvTxt {
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.fvDiv .fvTxt img {
+  max-width: 40vw;
+}
+
+@media (max-width: 575.98px) {
+  .fvDiv .fvTxt img {
+    max-width: 90vw;
+  }
+}
+
+#distress {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+#distress::after {
+  content: none;
+}
+
+#distress::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/add/bg.png) top left/100% 100% no-repeat;
+}
+
+#distress .tab_menu_container {
+  height: auto;
+  background: #fff;
+}
+
+#distress .tab_menu_container::before {
+  content: '';
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 260px;
+  background: #E6AA37;
+  z-index: 0;
+  opacity: .2;
+}
+
+#distress .tab_menu_reason {
+  position: relative;
+  width: 100%;
+}
+
+#distress .distress_wrap {
+  position: relative;
+}
+
+#distress .tab_menu_box {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+
+#distress .tab_menu_logoTxt_bg::before {
+  content: none;
+}
+
+.circleList li.is_blockIn .circleSvg .circle {
+  -webkit-animation: circleAnimation linear 3s;
+          animation: circleAnimation linear 3s;
+}
+
+.circleList li.is_blockIn .circleSvg .circle_75 {
+  -webkit-animation: circleAnimation2 linear 3s;
+          animation: circleAnimation2 linear 3s;
+}
+
+.circleList li.is_blockIn .circleSvg .circle_92 {
+  -webkit-animation: circleAnimation3 linear 3s;
+          animation: circleAnimation3 linear 3s;
+}
+
+.circleList li.is_blockIn .circleSvg .circle_gray {
+  -webkit-animation: circleAnimation linear 4.2s;
+          animation: circleAnimation linear 4.2s;
+}
+
+.circleList li.is_blockIn .circleSvg .circle_gray_2 {
+  -webkit-animation: circleAnimation linear 3.5s;
+          animation: circleAnimation linear 3.5s;
+}
+
+.ly_header.is_open {
+  z-index: 110;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.ly_header_inner {
+  background: url(../img/add/modal-bg.png) top left/100% 100% no-repeat;
+  height: 100%;
+}
+
+.ly_header_inner::before, .ly_header_inner::after {
+  content: none !important;
+  display: none;
+}
+
+#story {
+  margin-top: 80px;
+}
+
+.kumo1 {
+  position: absolute;
+  top: -20%;
+  right: -50%;
+  z-index: -1;
+}
+
+.kumo2 {
+  position: absolute;
+  bottom: -20%;
+  left: -50%;
+  z-index: -1;
+}
+
+.kumo2-2 {
+  position: absolute;
+  left: -80%;
+  top: -30%;
+  bottom: auto;
+  z-index: -2;
+}
+
+.kumo3 {
+  position: absolute;
+  top: -5%;
+  right: -80%;
+  z-index: -1;
+}
+
+.kumo4 {
+  position: absolute;
+  top: -50%;
+  left: -70%;
+  z-index: -1;
+}
+
+.kumo5 {
+  position: absolute;
+  top: -10%;
+  right: -70%;
+  z-index: -1;
+}
+
+.bl_footer_linkFlex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bl_footer_linkFlex .el_footer_link {
+  padding: 25px 0;
+}
+
+.bl_footer_linkFlex .el_footer_link:nth-of-type(2) {
+  margin-left: 30px;
+}
+/*# sourceMappingURL=add.css.map */
